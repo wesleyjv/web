@@ -1,0 +1,91 @@
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #e84ee0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.logo:hover {
+    color: #000000; /* Darker shade on hover */
+    text-decoration: underline; /* Underline effect */
+}
+
+
+.study_guide_nav {
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;  
+    font-weight: 700;
+}
+
+.study_guide_nav:hover {
+    color: #000000;
+    text-decoration: underline; 
+}
+
+.tutoring_nav {
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.tutoring_nav:hover {
+    color: #000000; /* Darker shade on hover */
+    text-decoration: underline; /* Underline effect */
+}
+
+.summarys_nav {
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.summarys_nav:hover {
+    color: #000000; /* Darker shade on hover */
+    text-decoration: underline; /* Underline effect */
+}
+
+.about_us_nav {
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.about_us_nav:hover {
+    color: #000000; /* Darker shade on hover */
+    text-decoration: underline; /* Underline effect */
+}
+
+.contact_nav {
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.contact_nav:hover {
+    color: #000000; /* Darker shade on hover */
+    text-decoration: underline; /* Underline effect */
+}
+
+
+.study_guide_nav, .tutoring_nav, .study_guide_nav, .about_us_nav, .summarys_nav, .contact_nav{
+    padding: 10px;
+    color: white;
+}
+
+#underlined {
+    text-decoration: underline;
+    color: black;
+}

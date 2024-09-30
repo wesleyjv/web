@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySmart | Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body class="body">
+    <main>
+        <header class="header">
+            <a href="index.html" class="logo">Home</a>
+            <nav class="navbar">
+                <a href="study_guide.html" class="study_guide_nav">Study Guide</a>
+                <a href="tutoring.html" class="tutoring_nav">Tutoring</a>
+                <a href="summary_and_notes.html" class="summarys_nav">Summary's</a>
+                <a href="about_us.html" class="about_us_nav">About us</a>
+                <a href="contact.html" class="contact_nav" id="underlined">Contact Us</a>
+            </nav>
+        </header>
+
+        <h1>Contact Us</h1>
+        <h2>Fields marked with <span class="kleur">*</span> are mandatory</h2>
+        <section class="contact-form">
+            
+            <form>
+                <legend class="gender">Gender <span class="kleur">*</span></legend>
+                <fieldset>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+                    <label><input type="radio" name="gender" value="prefer_not_to_say" required> Prefer not to say</label>
+                </fieldset>
+
+                <label for="name">Name <span class="kleur">*</span></label>
+                <input type="name" id="name" name="name" required placeholder="John Doe">
+
+                <label for="email">E-mail <span class="kleur">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="johndoe@gmail.com">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+36 0718 2991">
+
+                <label for="request">Submit a request or question <span class="kleur">*</span></label>
+                <textarea id="request" name="request" required maxlength="240" placeholder="Enter text"></textarea>
+
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    
+</body>
+</html>
