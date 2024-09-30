@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
 li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -14,18 +21,14 @@ li, a, button {
     left: 0;
     width: 100%;
     padding: 30px 10%;
-    background-color: #e84ee0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
-
-
 .nav_links {
     list-style: none;
-
 }
 
 .nav_links li {
@@ -33,16 +36,42 @@ li, a, button {
     padding: 0px 20px;
 }
 
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #0088a9
+}
+
+button {
+    padding: 9px 29px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    padding: 9px 29px;
+    background-color: rgba(0, 136, 169, 0.8);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
 
 .logo {
     font-size: 32px;
     color: #ffffff;
     text-decoration: none;
     font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 .logo:hover {
-    color: #000000; /* Darker shade on hover */
-    text-decoration: underline; /* Underline effect */
+    transition: all 0.3s ease 0s;
 }
 
 
