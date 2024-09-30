@@ -6,9 +6,10 @@ body {
 
 footer {
     background-color: #333;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 20px;
     text-align: center;
+    border-width: 0px;
 }
 
 footer nav ul {
@@ -23,7 +24,7 @@ footer nav ul li {
 }
 
 footer nav ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -37,10 +38,10 @@ footer p {
 }
 
 footer a {
-    color: #aaa;
+    color: #000000;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #fff;
+    color: #636262;
 }
