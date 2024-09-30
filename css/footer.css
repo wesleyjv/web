@@ -1,3 +1,5 @@
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,43 +7,55 @@ body {
 }
 
 footer {
-    background-color: #333;
-    color: rgb(0, 0, 0);
+    background-color: #f0f0f0;  /* Light gray background for the footer */
+    color: #333;  /* Dark gray text color for readability on light background */
     padding: 20px;
     text-align: center;
-    border-width: 0px;
+    border: none;  /* No border */
+    border-top: 2px solid #ccc;
+    
 }
 
 footer nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    border: none;
+    display: inline-block;
 }
 
 footer nav ul li {
     display: inline;
     margin: 0 15px;
+    border: none;
 }
 
 footer nav ul li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+    color: #333;  /* Dark gray for text links */
+    text-decoration: none;  /* No underline */
+    border: none;
 }
 
 footer address {
     margin: 20px 0;
+    color: #333;  /* Dark gray text */
+    border: none;
 }
 
 footer p {
     margin-top: 20px;
     font-size: 0.9em;
+    color: #333;  /* Dark gray text */
+    border: none;
 }
 
 footer a {
-    color: #000000;
+    color: #333;  /* Dark gray links */
     text-decoration: none;
+    border: none;
 }
 
 footer a:hover {
-    color: #636262;
+    color: #000;  /* Change to black on hover */
 }
+
