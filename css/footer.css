@@ -11,7 +11,7 @@ footer {
     color: #333;  /* Dark gray text color for readability on light background */
     padding: 20px;
     text-align: center;
-    border: none;  /* No border */
+    border: none; 
     border-top: 2px solid #ccc;
 }
 
@@ -30,8 +30,8 @@ footer nav ul li {
 }
 
 footer nav ul li a {
-    color: #333;  /* Dark gray for text links */
-    text-decoration: none;  /* No underline */
+    color: #333; 
+    text-decoration: none;  
     border: none;
 }
 
