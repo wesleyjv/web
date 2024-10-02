@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h1, h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 200;
+    margin: 20px;
+}
+
+h2 {
+    font-size: smaller;
+    text-decoration: dashed;
+    margin: 30px;
+}
+
+fieldset {
+    border-width: 0;
+    font-weight: normal;
+    padding: 10px;
+}
+
+input[type="name"] {
+    display: flex;
+    margin-bottom: 10px;
+    width: 350px;
+    padding: 10px;
+    font-size: 16px; 
+    border: 0px solid #ccc; 
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+input[type="email"] {
+    display: flex;
+    margin-bottom: 10px;
+    width: 350px;
+    padding: 10px; 
+    font-size: 16px; 
+    border: 0px solid #ccc; 
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+input[type="tel"] {
+    display: flex;
+    margin-bottom: 10px;
+    width: 350px;
+    padding: 10px; 
+    font-size: 16px; 
+    border: 0px solid #ccc; 
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+textarea[id="request"] {
+    display: flex;
+    resize: none; 
+    margin-bottom: 10px;
+    width: 350px;
+    height: 190px;
+    padding: 10px;
+    font-size: 16px;
+    border: 0px solid #ccc; 
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    display: block;
+}
+
+button[id="submit"]{
+    display: block;             
+    margin: 30px auto;
+    width: 200px;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #2C2C2C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+    
+}
+
+button[id="submit"]:hover {
+    transition: all 0.3s ease 0s;
+    background-color: #777575;  
+}
+
+.kleur {
+    color: red;
+}
