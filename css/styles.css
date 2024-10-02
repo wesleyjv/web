@@ -80,6 +80,7 @@ button[id="homepage_aboutus_button"]{
 button[id="homepage_aboutus_button"]:hover {
     transition: all 0.3s ease 0s;
     background-color: #0088a9;  
+    transform: scale(1.05);
 }
 
 .review_cards {
@@ -356,7 +357,9 @@ header{
 }
 
 .nav_links li a:hover{
-    color: #0088a9
+    color: #0088a9;
+    transform: scale(1.05);
+    
 }
 
 button[id="contact"] {
@@ -370,12 +373,10 @@ button[id="contact"] {
 }
 
 button[id="contact"]:hover {
-    padding: 9px 29px;
     background-color: rgba(0, 136, 169, 0.8);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
     transition: all 0.3s ease 0s;
+    transform: scale(1.05);
+
 }
 
 .logo {
@@ -390,6 +391,7 @@ button[id="contact"]:hover {
 .logo:hover {
     color: #0088a9;
     transition: all 0.3s ease 0s;
+    transform: scale(1.05);
 }
 
 /* Footer CSS */
@@ -454,5 +456,7 @@ footer a {
 
 footer a:hover {
     color: #0088a9;
+    transform: scale(1.05);
+
 }
 
