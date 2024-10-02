@@ -53,7 +53,6 @@ input[type="name"] {
     padding: 10px;
     font-size: 16px; 
     border: 0px solid #ccc; 
-
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -65,7 +64,6 @@ input[type="email"] {
     padding: 10px; 
     font-size: 16px; 
     border: 0px solid #ccc; 
-
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -76,7 +74,6 @@ input[type="tel"] {
     padding: 10px; 
     font-size: 16px; 
     border: 0px solid #ccc; 
-
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -89,7 +86,6 @@ textarea[id="request"] {
     padding: 10px;
     font-size: 16px;
     border: 0px solid #ccc; 
-    
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
 }
 

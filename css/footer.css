@@ -28,32 +28,26 @@ footer nav ul li {
     border: none;
 }
 
-footer nav ul li a {
-    color: #333; 
-    text-decoration: none;  
-    border: none;
-}
-
 footer address {
     margin: 20px 0;
-    color: #333;  /* Dark gray text */
+    color: #333;  
     border: none;
 }
 
 footer p {
     margin-top: 20px;
     font-size: 0.9em;
-    color: #333;  /* Dark gray text */
+    color: #333; 
     border: none;
 }
 
 footer a {
-    color: #333;  /* Dark gray links */
+    color: #333;  
     text-decoration: none;
     border: none;
 }
 
 footer a:hover {
-    color: #000;  /* Change to black on hover */
+    color: #000; 
 }
 
