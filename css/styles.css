@@ -1,8 +1,350 @@
+/* 1. Homepage
+2. Contact Page
+3. Header
+4. Footer */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Homepage */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
     font-family: "Montserrat", sans-serif;
+}
+
+.homepage {
+    display: flex;
+    margin: 100px 100px;
+    padding: 0;
+    justify-content: left;
+    flex-direction: column;
+}
+
+
+#homepage_main_one, .homepage_main_two {
+    padding: 0;
+    margin: 0 0;
+}
+#homepage_main_one {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#homepage_main_two {
+    font-size: 32px;
+    font-weight: 500;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#homepage_click_me {
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.homeText_2 {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 20px;
+}
+
+/* Contact Page */
+
+.contact-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h1, h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 200;
+    margin: 20px;
+}
+
+h2 {
+    font-size: smaller;
+    text-decoration: dashed;
+    margin: 30px;
+}
+
+fieldset {
+    border-width: 0;
+    font-weight: normal;
+    padding: 10px;
+}
+
+input[type="name"] {
+    display: flex;
+    margin-bottom: 10px;
+    width: 350px;
+    padding: 10px;
+    font-size: 16px; 
+    border: 0px solid #ccc; 
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+input[type="email"] {
+    display: flex;
+    margin-bottom: 10px;
+    width: 350px;
+    padding: 10px; 
+    font-size: 16px; 
+    border: 0px solid #ccc; 
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+input[type="tel"] {
+    display: flex;
+    margin-bottom: 10px;
+    width: 350px;
+    padding: 10px; 
+    font-size: 16px; 
+    border: 0px solid #ccc; 
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+textarea[id="request"] {
+    display: flex;
+    resize: none; 
+    margin-bottom: 10px;
+    width: 350px;
+    height: 190px;
+    padding: 10px;
+    font-size: 16px;
+    border: 0px solid #ccc; 
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    display: block;
+}
+
+button[id="submit"]{
+    display: block;             
+    margin: 30px auto;
+    width: 200px;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #2C2C2C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+    
+}
+
+button[id="submit"]:hover {
+    transition: all 0.3s ease 0s;
+    background-color: #777575;  
+}
+
+.kleur {
+    color: red;
+}
+
+
+/* Header CSS */
+
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 2px solid #ccc;
+}
+
+.nav_links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav_links li {
+    position: relative;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown li {
+    width: 150px;
+}
+
+.dropdown a {
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+.nav_links li:hover .dropdown {
+    display: block;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #0088a9
+}
+
+button[id="contact"] {
+    font-family: "Montserrat", sans-serif;
+    padding: 9px 29px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button[id="contact"]:hover {
+    padding: 9px 29px;
+    background-color: rgba(0, 136, 169, 0.8);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.logo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.logo:hover {
+    transition: all 0.3s ease 0s;
+}
+
+/* Footer CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: white;  
+    color: #333; 
+    padding: 20px;
+    text-align: center;
+    border: none; 
+    border-top: 2px solid #ccc;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: inline-block;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+    border: none;
+}
+
+footer address {
+    margin: 20px 0;
+    color: #333;  
+    border: none;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #333; 
+    border: none;
+}
+
+footer a {
+    color: #333;  
+    text-decoration: none;
+    border: none;
+}
+
+footer a:hover {
+    color: #000; 
 }
 
