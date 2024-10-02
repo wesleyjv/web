@@ -13,6 +13,15 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+body.fade-out {
+    opacity: 0;
+}
 
 .homepage {
     display: flex;
@@ -119,6 +128,7 @@ button[id="homepage_aboutus_button"]:hover {
 #review_card:hover {
     transform: scale(1.05); /* Increase size to 105% */
     box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.4); /* Enhance shadow to give depth effect */
+    cursor: pointer;
 }
 
 
