@@ -265,6 +265,7 @@ button[id="submit"]{
 button[id="submit"]:hover {
     transition: all 0.3s ease 0s;
     background-color: #777575;  
+    transform: scale(1.05);
 }
 
 .kleur {
