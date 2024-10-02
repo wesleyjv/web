@@ -27,7 +27,8 @@ body.fade-out {
     display: flex;
     height: 300px;
     width: 80%;
-    margin: 70px 90px;
+    margin-top: 50px;
+    margin-left: 100px;
     padding: 0;
     justify-content: left;
     flex-direction: column;
@@ -100,6 +101,7 @@ button[id="homepage_aboutus_button"]:hover {
     height: auto;
     width: auto;
     margin: 10px 10px;
+    margin-bottom: 90px;
     
 }
 
@@ -126,8 +128,8 @@ button[id="homepage_aboutus_button"]:hover {
 }
 
 #review_card:hover {
-    transform: scale(1.05); /* Increase size to 105% */
-    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.4); /* Enhance shadow to give depth effect */
+    transform: scale(1.05);
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
 
@@ -254,6 +256,7 @@ textarea[id="request"] {
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
+
 form {
     display: block;
 }
@@ -282,6 +285,42 @@ button[id="submit"]:hover {
 .kleur {
     color: red;
 }
+/* About us Page */
+
+.aboutus {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    width: 900px;
+
+    margin-bottom: 50px;
+
+}
+
+.aboutus a {
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 15px;
+}
+
+.aboutus p {
+    font-weight: normal;
+    font-size: 16px;
+    margin-left: 100px;
+}
+
+.aboutus dl {
+    margin-left: 100px;
+}
+
+.aboutus dl li {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
 
 
 /* Header CSS */
@@ -298,7 +337,7 @@ li, a, button{
 header{
     top: 0;
     left: 0;
-    width: 100%;
+    width: auto;
     padding: 30px 10%;
     display: flex;
     justify-content: space-between;
