@@ -27,7 +27,6 @@
 }
 
 #homepage_main_two {
-
     font-size: 32px;
     font-weight: 500;
     display: flex;
@@ -36,7 +35,6 @@
 }
 
 #homepage_click_me {
-
     font-size: 15px;
     font-weight: 500;
     display: flex;
@@ -53,14 +51,4 @@
     align-items: center;
     padding: 30px;
     margin: 20px;
-}
-
-
-.students_home_page {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding: 20px;
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
 }

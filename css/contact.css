@@ -6,7 +6,6 @@
     font-family: "Montserrat", sans-serif;
 }
 
-
 .contact-form {
     position: relative;
     display: flex;
@@ -19,13 +18,11 @@
     font-weight: bold;
 }
 
-
-
 h1, h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    
 }
+
 h1 {
     font-size: 200;
     margin: 20px;
@@ -37,14 +34,11 @@ h2 {
     margin: 30px;
 }
 
-
-
 fieldset {
     border-width: 0;
     font-weight: normal;
     padding: 10px;
 }
-
 
 input[type="name"] {
     display: flex;
@@ -55,7 +49,6 @@ input[type="name"] {
     border: 0px solid #ccc; 
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
 }
-
 
 input[type="email"] {
     display: flex;
@@ -105,13 +98,13 @@ button[id="submit"]{
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+    
 }
 
-button:hover {
-    background-color: #777575;
+button[id="submit"]:hover {
+    transition: all 0.3s ease 0s;
+    background-color: #777575;  
 }
-
-
 
 .kleur {
     color: red;
