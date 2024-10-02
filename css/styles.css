@@ -13,9 +13,12 @@
     font-family: "Montserrat", sans-serif;
 }
 
+
 .homepage {
     display: flex;
-    margin: 100px 100px;
+    height: 300px;
+    width: 80%;
+    margin: 90px 100px;
     padding: 0;
     justify-content: left;
     flex-direction: column;
@@ -26,40 +29,52 @@
     padding: 0;
     margin: 0 0;
 }
-#homepage_main_one {
-    font-size: 18px;
-    font-weight: 500;
+#homepage_welcome_text_small {
+    font-size: 15px;
+    font-weight: 490;
     display: flex;
     justify-content: left;
     align-items: center;
+    margin: 9px 0;
 }
 
-#homepage_main_two {
+#homepage_welcome_text_bold {
     font-size: 32px;
     font-weight: 500;
+    font-weight: bold;
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
-#homepage_click_me {
+#homepage_welcome_text_description {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 450;
     display: flex;
     justify-content: left;
     align-items: center;
+    margin: 12px 0;
 }
 
-.homeText_2 {
+button[id="homepage_aboutus_button"]{
+    display: block;             
+    padding: 7px 10px;
+    width: 150px;
     font-size: 16px;
-    text-decoration: none;
-    font-weight: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    margin: 20px;
+    color: #fff;
+    background-color: #2C2C2C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+    
 }
+
+button[id="homepage_aboutus_button"]:hover {
+    transition: all 0.3s ease 0s;
+    background-color: #777575;  
+}
+
 
 /* Contact Page */
 
@@ -217,12 +232,13 @@ header{
     left: 0;
     list-style: none;
     background-color: #fff;
-    border-radius: 5px;
     padding: 0;
     margin: 0;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+
+    
 }
 
 .dropdown li {
@@ -241,6 +257,7 @@ header{
 }
 
 .nav_links li:hover .dropdown {
+    
     display: block;
 }
 
@@ -281,6 +298,7 @@ button[id="contact"]:hover {
 }
 
 .logo:hover {
+    color: #0088a9;
     transition: all 0.3s ease 0s;
 }
 
@@ -345,6 +363,6 @@ footer a {
 }
 
 footer a:hover {
-    color: #000; 
+    color: #0088a9;
 }
 
