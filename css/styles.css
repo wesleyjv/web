@@ -4,6 +4,32 @@
 4. Footer */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+.homepage .horizontal-line-homepage {
+    border: none;
+    border-top: 2px solid #999;; /* Solid purple line */
+    margin-top: 26px;
+    margin-left: 0px; /* Adjust the spacing above and below the line */
+    width: 6%; /* Full width */
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.reviews .horizontal-line-reviews {
+    border: none;
+    border-top: 2px solid #999;
+
+    margin-right: 0px;
+    width: 30%;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+.homepage .horizontal-line:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease 0s;
+}
+
 /* Homepage */
 * {
     box-sizing: border-box;
@@ -17,7 +43,6 @@ body {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
-
 
 body.fade-out {
     opacity: 0;
@@ -40,35 +65,27 @@ body.fade-out {
 
 }
 
-#homepage_main_one, .homepage_main_two {
+#homepage_welcome_text_bold, #homepage_welcome_text_description {
     padding: 0;
     margin: 0 0;
-}
-#homepage_welcome_text_small {
-    font-size: 15px;
-    font-weight: 490;
+    margin-top: 10px;
     display: flex;
     justify-content: left;
     align-items: center;
-    margin: 9px 0;
 }
 
+
 #homepage_welcome_text_bold {
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 56px;
     font-weight: bold;
-    display: flex;
-    justify-content: left;
-    align-items: center;
 }
 
 #homepage_welcome_text_description {
-    font-size: 15px;
+    font-size: 24px;
+    color: #999;
     font-weight: 450;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 12px 0;
+    margin-bottom: 15px;
+    
 }
 
 
@@ -91,28 +108,47 @@ button[id="homepage_aboutus_button"]:hover {
     transition: all 0.3s ease 0s;
     background-color: #0088a9;  
     transform: scale(1.05);
+
 }
 
 .review_cards {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     flex-direction: row;
     height: auto;
     width: auto;
-    margin: 10px 10px;
+    margin-right: 100px;
     margin-bottom: 90px;
     
 }
 
+.reviews {
+    margin-top: 150px;
+}
 
 .reviews a {
     display: flex;
-    justify-content: center;
-    font-size: 28px;
+    justify-content: right;
+    font-size: 56px;
     font-weight: bold;
-    margin: 12px 12px;
+    margin-right: 108px;
+}
 
+.underline {
+    text-decoration: underline;
+}
+
+.descriptionText {
+    font-size: 24px;
+    color: #999;
+    font-weight: 450;
+}
+
+#homepage_welcome_text_description {
+    font-size: 24px;
+    color: #999;
+    font-weight: 450;
 }
 
 #review_card {
@@ -170,14 +206,7 @@ button[id="homepage_aboutus_button"]:hover {
     margin-right: 3px;
 }
 
-/* #line {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(171, 171, 171);
-    height: 10px;
-    width: 80%;
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
-} */
+
 /* Contact Page */
 
 .contact-form {
@@ -378,7 +407,6 @@ header{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 
-    
 }
 
 .dropdown li {
