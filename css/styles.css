@@ -537,3 +537,101 @@ footer a:hover {
 
 }
 
+
+/* Signup Page */
+
+
+.signup {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h1, h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 200;
+    margin: 20px;
+}
+
+h2 {
+    font-size: smaller;
+    text-decoration: dashed;
+    margin: 30px;
+}
+
+/* Name */
+input[class="signupfield"] {
+    display: flex;
+    margin-bottom: 10px;
+    width: 350px;
+    padding: 10px;
+    font-size: 16px; 
+    border: 0px solid #ccc; 
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
+/* Email */
+input[class="signupfield"] {
+    display: flex;
+    margin-bottom: 10px;
+    width: 350px;
+    padding: 10px; 
+    font-size: 16px; 
+    border: 0px solid #ccc; 
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
+/* Password */
+input[class="signupfield"] {
+    display: flex;
+    margin-bottom: 10px;
+    width: 350px;
+    padding: 10px; 
+    font-size: 16px; 
+    border: 0px solid #ccc; 
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
+/* Confirm Password */
+input[class="signupfield"] {
+    display: flex;
+    margin-bottom: 10px;
+    width: 350px;
+    padding: 10px; 
+    font-size: 16px; 
+    border: 0px solid #ccc; 
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+form {
+    display: block;
+}
+/* Signup Btn */
+button[class="signupfield"]{
+    display: block;             
+    margin: 30px auto;
+    width: 200px;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #2C2C2C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+    
+}
+
+button[id="submit"]:hover {
+    transition: all 0.3s ease 0s;
+    background-color: #777575;  
+    transform: scale(1.05);
+}
