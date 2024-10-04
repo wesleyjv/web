@@ -4,58 +4,37 @@
 4. Footer */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-.homepage .horizontal-line-homepage {
-    border: none;
-    border-top: 2px solid #999;; /* Solid purple line */
-    margin-top: 26px;
-    margin-left: 0px; /* Adjust the spacing above and below the line */
-    width: 6%; /* Full width */
-    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
-}
-
-
-
-.reviews .horizontal-line-reviews {
-    border: none;
-    border-top: 2px solid #999;
-
-    margin-right: 0px;
-    width: 30%;
-    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
-}
-
-.homepage .horizontal-line:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease 0s;
-}
-
-/* Homepage */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
     font-family: "Montserrat", sans-serif;
-    
 }
 
 body {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+    
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Homepage */
+
+.homepage {
+    width: auto;
+    height: 100vh;
+    background-color: transparent;
+    border: solid blue 5px;
     background: radial-gradient(circle at 30% 30%, rgba(241, 10, 222, 0.6), rgba(255, 0, 0, 0) 40%),
                 radial-gradient(circle at 70% 40%, rgba(100, 50, 255, 0.6), rgba(255, 0, 0, 0) 40%),
                 radial-gradient(circle at 50% 80%, rgba(0, 136, 169, 1), rgba(255, 0, 0, 0) 40%),
                 #0a0a23;
-
-
     background-size: cover;
-    height: 100vh;
-    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
 }
 
-
-.homepage {
+.welcoming-text {
     display: flex;
     height: 300px;
     width: 60%;
@@ -65,13 +44,12 @@ body {
     justify-content: left;
     flex-direction: column;
     background-color: transparent;
-    
+    border: solid red 5px;
 }
 
-.homepage a {
+.welcoming-text a {
     background-color: transparent;
     color: white;
-
 }
 
 #homepage_welcome_text_bold, #homepage_welcome_text_description {
@@ -135,7 +113,7 @@ button[id="homepage_aboutus_button"]:hover {
 }
 
 .reviews {
-    margin-top: 600px;
+    margin-top: 100px;
 }
 
 .reviews a {
