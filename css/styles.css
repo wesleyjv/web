@@ -31,19 +31,23 @@ body {
                 radial-gradient(circle at 50% 80%, rgba(0, 136, 169, 1), rgba(255, 0, 0, 0) 40%),
                 #0a0a23;
     background-size: auto;
+    z-index: 1;
+    position: relative;
 }
 
 .welcoming-text {
+    position: absolute;
     display: flex;
     height: 300px;
     width: 60%;
-
     margin-left: 100px;
+    margin-top: 150px;
     padding: 0;
     justify-content: left;
     flex-direction: column;
     background-color: transparent;
-    /* border: solid red 5px; */
+    border: solid red 5px;
+    z-index: 9999;
 }
 
 .welcoming-text a {
