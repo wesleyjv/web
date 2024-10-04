@@ -52,7 +52,7 @@ body.fade-out {
 .homepage {
     display: flex;
     height: 300px;
-    width: 80%;
+    width: 60%;
     margin-top: 50px;
     margin-left: 100px;
     padding: 0;
@@ -128,7 +128,7 @@ button[id="homepage_aboutus_button"]:hover {
 }
 
 .reviews {
-    margin-top: 150px;
+    margin-top: 600px;
 }
 
 .reviews a {
@@ -639,3 +639,6 @@ button[id="submit"]:hover {
     background-color: #777575;  
     transform: scale(1.05);
 }
+
+
+
