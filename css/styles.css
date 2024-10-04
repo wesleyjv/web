@@ -49,6 +49,44 @@ body {
     z-index: 9999;
 }
 
+.news {
+    position: absolute;
+    height: 450px;
+    width: 350px;
+    background-color: white;
+    margin-top: 300px;
+    margin-left: 1300px;
+    background: radial-gradient(circle at 30% 30%, rgba(241, 10, 222, 0.6), rgba(255, 0, 0, 0) 40%),
+                radial-gradient(circle at 70% 40%, rgba(100, 50, 255, 0.6), rgba(255, 0, 0, 0) 40%),
+                radial-gradient(circle at 50% 80%, rgba(0, 136, 169, 1), rgba(255, 0, 0, 0) 40%),
+                #0a0a23;
+    box-shadow: 8px 15px 24px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+.news2 {
+    position: absolute;
+    height: 450px;
+    width: 350px;
+    background-color: white;
+    margin-top: 200px;
+    margin-left: 1390px;
+    background: radial-gradient(circle at 30% 30%, rgba(241, 10, 222, 0.6), rgba(255, 0, 0, 0) 40%),
+                radial-gradient(circle at 70% 40%, rgba(100, 50, 255, 0.6), rgba(255, 0, 0, 0) 40%),
+                radial-gradient(circle at 50% 80%, rgba(0, 136, 169, 1), rgba(255, 0, 0, 0) 40%),
+                #0a0a23;
+    box-shadow: 8px 15px 24px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.news:hover {
+    transition: all 0.3s ease 0s;
+    transform: scale(1.05);
+}
+.news2:hover {
+    transition: all 0.3s ease 0s;
+    transform: scale(1.05);
+}
+
 .welcoming-text a {
     background-color: transparent;
     color: white;
