@@ -23,28 +23,27 @@ body {
 
 .homepage {
     width: auto;
-    height: 100vh;
+    height: 820px;
     background-color: transparent;
-    border: solid blue 5px;
+    border: none;
     background: radial-gradient(circle at 30% 30%, rgba(241, 10, 222, 0.6), rgba(255, 0, 0, 0) 40%),
                 radial-gradient(circle at 70% 40%, rgba(100, 50, 255, 0.6), rgba(255, 0, 0, 0) 40%),
                 radial-gradient(circle at 50% 80%, rgba(0, 136, 169, 1), rgba(255, 0, 0, 0) 40%),
                 #0a0a23;
-    background-size: cover;
-    margin-bottom: 50px;
+    background-size: auto;
 }
 
 .welcoming-text {
     display: flex;
     height: 300px;
     width: 60%;
-    margin-top: 50px;
+
     margin-left: 100px;
     padding: 0;
     justify-content: left;
     flex-direction: column;
     background-color: transparent;
-    border: solid red 5px;
+    /* border: solid red 5px; */
 }
 
 .welcoming-text a {
@@ -461,23 +460,6 @@ button[id="contact"]:hover {
 }
 
 /* Footer CSS */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    font-family: "Montserrat", sans-serif;
-}
-
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
 footer {
     background-color: white;  
     color: #333; 
