@@ -46,7 +46,6 @@ body {
     justify-content: left;
     flex-direction: column;
     background-color: transparent;
-    border: solid red 5px;
     z-index: 9999;
 }
 
@@ -100,6 +99,7 @@ button[id="homepage_aboutus_button"]:hover {
     transition: all 0.3s ease 0s;
     background-color: #0088a9;  
     transform: scale(1.05);
+    box-shadow: 8px 12px 20px rgba(100, 50, 255, 0.6);
 
 }
 
@@ -157,7 +157,7 @@ button[id="homepage_aboutus_button"]:hover {
 
 #review_card:hover {
     transform: scale(1.05);
-    box-shadow: 4px 6px 12px rgba(100, 50, 255, 0.6);
+    box-shadow: 8px 20px 19px rgba(100, 50, 255, 0.6);
     cursor: pointer;
 }
 
