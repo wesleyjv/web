@@ -19,9 +19,13 @@ body {
     box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
 }
 
+#selected {
+    color: #0088a9;
+}
+
 /* Homepage */
 
-.homepage {
+.hero-section {
     width: auto;
     height: 820px;
     background-color: transparent;
@@ -31,6 +35,7 @@ body {
                 radial-gradient(circle at 50% 80%, rgba(0, 136, 169, 1), rgba(255, 0, 0, 0) 40%),
                 #0a0a23;
     background-size: auto;
+    border-bottom: 2px solid #ccc;
     z-index: 1;
     position: relative;
 }
@@ -47,44 +52,6 @@ body {
     flex-direction: column;
     background-color: transparent;
     z-index: 9999;
-}
-
-/* .news {
-    position: absolute;
-    height: 450px;
-    width: 350px;
-    background-color: white;
-    margin-top: 300px;
-    margin-left: 1300px;
-    background: radial-gradient(circle at 30% 30%, rgba(241, 10, 222, 0.6), rgba(255, 0, 0, 0) 40%),
-                radial-gradient(circle at 70% 40%, rgba(100, 50, 255, 0.6), rgba(255, 0, 0, 0) 40%),
-                radial-gradient(circle at 50% 80%, rgba(0, 136, 169, 1), rgba(255, 0, 0, 0) 40%),
-                #0a0a23;
-    box-shadow: 8px 15px 24px rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-}
-.news2 {
-    position: absolute;
-    height: 450px;
-    width: 350px;
-    background-color: white;
-    margin-top: 200px;
-    margin-left: 1390px;
-    background: radial-gradient(circle at 30% 30%, rgba(241, 10, 222, 0.6), rgba(255, 0, 0, 0) 40%),
-                radial-gradient(circle at 70% 40%, rgba(100, 50, 255, 0.6), rgba(255, 0, 0, 0) 40%),
-                radial-gradient(circle at 50% 80%, rgba(0, 136, 169, 1), rgba(255, 0, 0, 0) 40%),
-                #0a0a23;
-    box-shadow: 8px 15px 24px rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-} */
-
-.news:hover {
-    transition: all 0.3s ease 0s;
-    transform: scale(1.05);
-}
-.news2:hover {
-    transition: all 0.3s ease 0s;
-    transform: scale(1.05);
 }
 
 .welcoming-text a {
@@ -117,7 +84,40 @@ body {
     
 }
 
+#homepage_welcome_text_bold:hover {
+    color: #3498db;
+    cursor: grab;
+}
 
+#homepage_welcome_text_description:hover {
+    color: #f0f0f0; 
+    cursor: grab;
+}
+
+.what-we-offer {
+    margin-top: 50px;
+    width: auto;
+    height: 500px;
+    border: solid red 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+    
+}
+
+
+.what-we-offer .bold {
+    font-size: 49px;
+    color: black;
+    font-weight: bold;
+}
+
+.what-we-offer .light {
+    font-size: 49px;
+    color: black;
+    font-weight: bold;
+}
 
 button[id="homepage_aboutus_button"]{
     display: block;             
@@ -402,6 +402,7 @@ header{
     align-items: center;
     z-index: 100;
     border-bottom: 2px solid #ccc;
+    border: solid red 5px;
     
 }
 
