@@ -38,9 +38,11 @@ body {
     border-bottom: 2px solid #ccc;
     z-index: 1;
     position: relative;
+
+     
 }
 
-.welcoming-text {
+.hero-welcoming-text {
     position: absolute;
     display: flex;
     height: 300px;
@@ -54,12 +56,13 @@ body {
     z-index: 9999;
 }
 
-.welcoming-text a {
+.hero-welcoming-text a {
     background-color: transparent;
     color: white;
+    width: 150px;
 }
 
-#homepage_welcome_text_bold, #homepage_welcome_text_description {
+#hero-welcoming-text_bold, #hero-welcoming-text_description {
     background-color: transparent;
     padding: 0;
     margin: 0 0;
@@ -71,12 +74,12 @@ body {
 }
 
 
-#homepage_welcome_text_bold {
+#hero-welcoming-text_bold {
     font-size: 56px;
     font-weight: bold;
 }
 
-#homepage_welcome_text_description {
+#hero-welcoming-text_description {
     font-size: 24px;
     color: #999;
     font-weight: 450;
@@ -84,39 +87,14 @@ body {
     
 }
 
-#homepage_welcome_text_bold:hover {
+#hero-welcoming-text_bold:hover {
     color: #3498db;
     cursor: grab;
 }
 
-#homepage_welcome_text_description:hover {
+#hero-welcoming-text_description:hover {
     color: #f0f0f0; 
     cursor: grab;
-}
-
-.what-we-offer {
-    margin-top: 50px;
-    width: auto;
-    height: 500px;
-    border: solid red 5px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    
-    
-}
-
-
-.what-we-offer .bold {
-    font-size: 49px;
-    color: black;
-    font-weight: bold;
-}
-
-.what-we-offer .light {
-    font-size: 49px;
-    color: black;
-    font-weight: bold;
 }
 
 button[id="homepage_aboutus_button"]{
@@ -141,6 +119,48 @@ button[id="homepage_aboutus_button"]:hover {
 
 }
 
+/* What we offer Section */
+
+.what-we-offer {
+    
+    margin-top: 50px;
+    width: auto;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+    border: solid red 5px;
+}
+
+.what-we-offer-box {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: rgba(19, 119, 220, 0.6);
+}
+
+.what-we-offer .bold {
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+}
+
+.what-we-offer .light {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Reviews Section */
+.reviews-section {
+    margin-top: 100px;
+     
+}
+
+
 .review_cards {
     display: flex;
     align-items: center;
@@ -150,35 +170,27 @@ button[id="homepage_aboutus_button"]:hover {
     width: auto;
     margin-right: 100px;
     margin-bottom: 90px;
-    
 }
 
-.reviews {
-    margin-top: 100px;
-}
 
-.reviews a {
+
+.reviews-section a {
     display: flex;
     justify-content: right;
     font-size: 56px;
     font-weight: bold;
     margin-right: 108px;
+
+    
 }
 
-.underline {
-    text-decoration: underline;
-}
-
-.descriptionText {
-    font-size: 24px;
+.reviews-section h4 {
+    display: flex;
+    justify-content: right;
+    font-weight: normal;
     color: #999;
-    font-weight: 450;
-}
-
-#homepage_welcome_text_description {
-    font-size: 24px;
-    color: #999;
-    font-weight: 450;
+    font-size: 32px;
+    margin-right: 108px;
 }
 
 #review_card {
@@ -198,8 +210,6 @@ button[id="homepage_aboutus_button"]:hover {
     box-shadow: 8px 20px 19px rgba(19, 119, 220, 0.6);
     cursor: pointer;
 }
-
-
 
 #review_card .user-info {
     display: flex;
@@ -402,7 +412,7 @@ header{
     align-items: center;
     z-index: 100;
     border-bottom: 2px solid #ccc;
-    border: solid red 5px;
+     
     
 }
 
@@ -515,6 +525,8 @@ footer {
     text-align: center;
     border: none; 
     border-top: 2px solid #ccc;
+
+     
 }
 
 footer nav ul {
