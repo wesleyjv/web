@@ -471,6 +471,46 @@ button[id="contact"]:hover {
     transform: scale(1.05);
 }
 
+
+/* Summaries Page */
+
+#searchInput {
+    padding: 10px; /* Space inside the input */
+    width: 300px; /* Set the width of the search input */
+    border: 1px solid #ccc; /* Border around the input */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for the input text */
+    margin-bottom: 10px; /* Space between the input and the results */
+}
+
+/* Styles for the search results list */
+#searchResults {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+/* Styles for individual list items */
+#searchResults li {
+    padding: 10px; /* Space inside the list items */
+    border: 1px solid #ccc; /* Border around each item */
+    margin: 2px 0; /* Space between items */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Highlighting the item on hover */
+#searchResults li:hover {
+    background-color: #f0f0f0; /* Light grey background on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    #searchInput {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
 /* Footer CSS */
 footer {
     background-color: white;  
