@@ -12,13 +12,6 @@
     font-family: "Montserrat", sans-serif;
 }
 
-body {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    
-    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
-}
-
 #selected {
     color: #0088a9;
 }
@@ -38,8 +31,6 @@ body {
     border-bottom: 2px solid #ccc;
     z-index: 1;
     position: relative;
-
-     
 }
 
 .hero-welcoming-text {
@@ -97,7 +88,7 @@ body {
     cursor: grab;
 }
 
-button[id="homepage_aboutus_button"]{
+button[id="hero-about_us-button"]{
     display: block;             
     padding: 7px 10px;
     width: 150px;
@@ -111,7 +102,7 @@ button[id="homepage_aboutus_button"]{
     
 }
 
-button[id="homepage_aboutus_button"]:hover {
+button[id="hero-about_us-button"]:hover {
     transition: all 0.3s ease 0s;
     background-color: #0088a9;  
     transform: scale(1.05);
@@ -119,47 +110,10 @@ button[id="homepage_aboutus_button"]:hover {
 
 }
 
-/* What we offer Section */
-
-.what-we-offer {
-    
-    margin-top: 50px;
-    width: auto;
-    height: 500px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-evenly;
-    flex-direction: row;
-    
-    border: solid red 5px;
-}
-
-.what-we-offer-box {
-    width: 250px;
-    height: 250px;
-    border-radius: 15px;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
-    background-color: rgba(19, 119, 220, 0.6);
-}
-
-.what-we-offer .bold {
-    font-size: 32px;
-    color: black;
-    font-weight: bold;
-}
-
-.what-we-offer .light {
-    font-size: 16px;
-    color: black;
-    font-weight: bold;
-}
-
 /* Reviews Section */
 .reviews-section {
     margin-top: 100px;
-     
 }
-
 
 .review_cards {
     display: flex;
@@ -242,7 +196,7 @@ button[id="homepage_aboutus_button"]:hover {
 }
 
 #review_card .star {
-    color: #FFD700; /* Gold star color */
+    color: #FFD700;
     margin-right: 3px;
 }
 
@@ -435,7 +389,6 @@ header{
     display: block;
 }
 
-/* Dropdown menu initially hidden with height and opacity */
 .dropdown {
     opacity: 0;
     visibility: hidden;
@@ -450,7 +403,7 @@ header{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateY(-10px); /* Start slightly above */
+    transform: translateY(-12px);
 }
 
 .dropdown li {
@@ -468,11 +421,11 @@ header{
     background-color: #f0f0f0;
 }
 
-/* Show dropdown with smooth transition on hover */
+
 .nav_links li:hover .dropdown {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0); /* Move dropdown to original position */
+    transform: translateY(0); 
 }
 
 .nav_links li a {
@@ -525,7 +478,7 @@ footer {
     text-align: center;
     border: none; 
     border-top: 2px solid #ccc;
-
+    width: 100%;
      
 }
 
@@ -569,100 +522,6 @@ footer a:hover {
 }
 
 
-/* Signup Page */
 
 
-.signup {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
 
-h1, h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-}
-
-h1{
-    font-size: 200;
-    margin: 20px;
-}
-
-h2 {
-    font-size: smaller;
-    text-decoration: dashed;
-    margin: 30px;
-}
-
-/* Name */
-input[class="signupfield"] {
-    display: flex;
-    margin-bottom: 10px;
-    width: 350px;
-    padding: 10px;
-    font-size: 16px; 
-    border: 0px solid #ccc; 
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
-}
-/* Email */
-input[class="signupfield"] {
-    display: flex;
-    margin-bottom: 10px;
-    width: 350px;
-    padding: 10px; 
-    font-size: 16px; 
-    border: 0px solid #ccc; 
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
-}
-/* Password */
-input[class="signupfield"] {
-    display: flex;
-    margin-bottom: 10px;
-    width: 350px;
-    padding: 10px; 
-    font-size: 16px; 
-    border: 0px solid #ccc; 
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
-}
-/* Confirm Password */
-input[class="signupfield"] {
-    display: flex;
-    margin-bottom: 10px;
-    width: 350px;
-    padding: 10px; 
-    font-size: 16px; 
-    border: 0px solid #ccc; 
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
-}
-
-
-form {
-    display: block;
-}
-/* Signup Btn */
-button[class="signupfield"]{
-    display: block;             
-    margin: 30px auto;
-    width: 200px;
-    padding: 15px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #2C2C2C;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
-    
-}
-
-button[id="submit"]:hover {
-    transition: all 0.3s ease 0s;
-    background-color: #777575;  
-    transform: scale(1.05);
-}
