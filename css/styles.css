@@ -473,63 +473,114 @@ button[id="contact"]:hover {
 
 
 /* Summaries Page */
-
-
-.searchSummaries {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 150px;
+#start-section {
+    
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 50px;
     margin-top: 100px;
+    border-radius: 10px;
+}
+
+#start-section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#start-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+.download-icon {
+    width: 16px; /* Adjust the size of the icon */
+    height: 16px; /* Adjust the size of the icon */
+    margin-right: 5px; /* Space between the icon and text */
+    vertical-align: middle; /* Aligns the icon with the text */
+    display: inline-block; /* Keeps it inline with text */
+    background-color: transparent;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.download-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.download-btn:hover {
+    background-color: #ddd;
 }
 
 #searchInput {
-    padding: 10px; /* Space inside the input */
-    width: 30%; /* Set the width of the search input */
-    border: 1px solid #ccc; /* Border around the input */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 16px; /* Font size for the input text */
-    margin-bottom: 10px; /* Space between the input and the results */
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Styles for the search results list */
-#searchResults {
-    list-style-type: none; /* Remove default list styles */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-    width: 30%;
-}
-
-/* Styles for individual list items */
-#searchResults li {
-    padding: 10px; /* Space inside the list items */
-    border: 1px solid #ccc; /* Border around each item */
-    margin: 2px 0; /* Space between items */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition for background color */
-    border: 1px solid #ccc; /* Border around the input */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 16px; /* Font size for the input text */
-
-}
-
-/* Highlighting the item on hover */
-#searchResults li:hover {
-    background-color: #f0f0f0; /* Light grey background on hover */
-}
-
-/* Responsive styles */
 @media (max-width: 600px) {
     #searchInput {
-        width: 100%; /* Full width on smaller screens */
+        width: 100%;
     }
 }
 
-.MathematicsBox {
-    width: 30%;
-    height: 34%;   
-}
+
 
 
 /* Footer CSS */

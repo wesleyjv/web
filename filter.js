@@ -1,18 +1,15 @@
 function filterSubjects() {
     const input = document.getElementById('searchInput').value.toLowerCase();
-    const results = document.getElementById('searchResults');
-    const listItems = results.getElementsByTagName('li');
+    const cardContainer = document.getElementById('cardContainer');
+    const cards = cardContainer.getElementsByClassName('card');
 
-    // Show all results initially
-    for (let i = 0; i < listItems.length; i++) {
-        listItems[i].style.display = ""; // Show all items
-    }
-
-    // Filter results based on input
-    for (let i = 0; i < listItems.length; i++) {
-        const item = listItems[i].textContent || listItems[i].innerText;
-        if (item.toLowerCase().indexOf(input) === -1) {
-            listItems[i].style.display = "none"; // Hide non-matching items
+    // Loop through all cards, and hide those that don't match the search query
+    for (let i = 0; i < cards.length; i++) {
+        const title = cards[i].getElementsByClassName('card-title')[0].textContent.toLowerCase();
+        if (title.indexOf(input) > -1) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
         }
     }
 }
