@@ -498,9 +498,7 @@ button[id="contact"]:hover {
     list-style-type: none; /* Remove default list styles */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
-    
     width: 30%;
-
 }
 
 /* Styles for individual list items */
@@ -527,6 +525,12 @@ button[id="contact"]:hover {
         width: 100%; /* Full width on smaller screens */
     }
 }
+
+.MathematicsBox {
+    width: 30%;
+    height: 34%;   
+}
+
 
 /* Footer CSS */
 footer {
