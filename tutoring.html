@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudySmart | Contact Us</title>
+    <meta name="description"
+        content="StudySmart is your one-stop destination for study guides, tutoring, and educational resources. Join our vibrant community and unlock your academic potential!">
+    <meta name="keywords" content="study, tutoring, study guides, educational resources, learning, online tutoring">
+    <meta name="author" content="StudySmart">
+    <title>StudySmart - Home</title>
     <link rel="icon" type="image/x-icon" href="img/logo.png">
-    <audio id="button-click-sound" src="audio/click.wav" preload="auto"></audio>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
@@ -17,7 +20,7 @@
         <nav>
             <ul class="nav_links">
                 <li><a href="study_guide.html">Study Guide</a></li>
-                <li><a href="tutoring.html">Tutoring <span class="arrow">&#9660;</span></a> <!-- Arrow added here -->
+                <li><a href="tutoring.html" id="selected" >Tutoring <span class="arrow">&#9660;</span></a> <!-- Arrow added here -->
                     <ul class="dropdown">
                         <li><a href="#">Online Tutoring</a></li>
                         <li><a href="#">In-Person Tutoring</a></li>
@@ -35,34 +38,17 @@
                 <li><a href="aboutus.html">About Us</a></li>
             </ul>
         </nav>
-        <a href="contact.html" class="contact" id="selected"><button id="contact">Contact</button></a>
+        <a href="contact.html" class="contact"><button id="contact">Contact</button></a>
     </header>
-    <h1>Contact Us</h1>
-    <h2>Fields marked with <span class="kleur">*</span> are mandatory</h2>
-    <section class="contact-form">
-        <form method="POST">
-            <legend class="gender">Gender <span class="kleur">*</span></legend>
-            <fieldset>
-                <label><input type="radio" name="gender" value="male" required> Male</label>
-                <label><input type="radio" name="gender" value="female" required> Female</label>
-                <label><input type="radio" name="gender" value="prefer_not_to_say" required> Prefer not to say</label>
-            </fieldset>
 
-            <label for="name">Name <span class="kleur">*</span></label>
-            <input type="name" id="name" name="name" required placeholder="John Doe">
-
-            <label for="email">E-mail <span class="kleur">*</span></label>
-            <input type="email" id="email" name="email" required placeholder="johndoe@gmail.com">
-
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="+36 0718 2991">
-
-            <label for="request">Submit a request or question <span class="kleur">*</span></label>
-            <textarea id="request" name="request" required maxlength="240" placeholder="Enter text"></textarea>
-
-            <button type="submit" id="submit">Submit</button>
-        </form>
+    <section class="tutoring-hero-section">
+        <section class="tutoring-hero-welcoming-text">
+            <p id="tutoring-hero-welcoming-text_bold">Unlock Your Full Potential</p>
+            <p id="tutoring-hero-welcoming-text_bold"> Study Smarter, Not Harder!</p>
+            <p id="tutoring-hero-welcoming-text_description">Get acces to summaries and notes, tutoring and more!</p>
+        </section>
     </section>
+    
 
     <footer>
         <nav>
@@ -80,5 +66,3 @@
         <p>&copy; 2024 StudySmart. All rights reserved.</p>
     </footer>
 </body>
-
-</html>

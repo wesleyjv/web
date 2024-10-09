@@ -119,11 +119,11 @@ button[id="hero-about_us-button"]:hover {
 .review_cards {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     flex-direction: row;
     height: auto;
     width: auto;
-    margin-right: 100px;
+    
     margin-bottom: 90px;
 }
 
@@ -131,21 +131,20 @@ button[id="hero-about_us-button"]:hover {
 
 .reviews-section a {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     font-size: 56px;
     font-weight: bold;
-    margin-right: 108px;
 
     
 }
 
 .reviews-section h4 {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     font-weight: normal;
     color: #999;
     font-size: 32px;
-    margin-right: 108px;
+
 }
 
 #review_card {
@@ -344,7 +343,78 @@ button[id="submit"]:hover {
 }
 
 
+/* Tutoring Page */
 
+.tutoring-hero-section {
+    width: auto;
+    height: 620px;
+    background-color: transparent;
+    border: none;
+    background: radial-gradient(circle at 30% 30%, rgba(0, 26, 255, 0.6), rgba(255, 0, 0, 0) 40%),
+                radial-gradient(circle at 70% 40%, rgba(19, 119, 220, 0.6), rgba(255, 0, 0, 0) 40%),
+                radial-gradient(circle at 50% 80%, rgba(0, 136, 169, 1), rgba(255, 0, 0, 0) 40%),
+                #0a0a23;
+    background-size: auto;
+    border-bottom: 2px solid #ccc;
+    z-index: 1;
+    position: relative;
+}
+
+
+.tutoring-hero-welcoming-text {
+    position: absolute;
+    display: flex;
+    height: 300px;
+    width: 60%;
+    margin-left: 100px;
+    margin-top: 150px;
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    z-index: 9999;
+}
+
+.tutoring-hero-welcoming-text a {
+    background-color: transparent;
+    color: white;
+    width: 150px;
+}
+
+#tutoring-hero-welcoming-text_bold, #tutoring-hero-welcoming-text_description {
+    background-color: transparent;
+    padding: 0;
+    margin: 0 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+}
+
+
+#tutoring-hero-welcoming-text_bold {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+#tutoring-hero-welcoming-text_description {
+    font-size: 24px;
+    color: #999;
+    font-weight: 450;
+    margin-bottom: 15px;
+    
+}
+
+#tutoring-hero-welcoming-text_bold:hover {
+    color: #3498db;
+    cursor: grab;
+}
+
+#tutoring-hero-welcoming-text_description:hover {
+    color: #f0f0f0; 
+    cursor: grab;
+}
 
 /* Header CSS */
 
