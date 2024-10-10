@@ -200,6 +200,21 @@ button[id="hero-about_us-button"]:hover {
     margin-right: 3px;
 }
 
+/* What we offer Section */
+
+.what-we-offer {
+    margin-top: 100px;
+}
+
+.what-we-offer a {
+    display: flex;
+    justify-content: center;
+    font-size: 56px;
+    font-weight: bold;
+
+    
+}
+
 
 /* Contact Page */
 
@@ -703,8 +718,5 @@ footer a:hover {
     transform: scale(1.05);
 
 }
-
-
-
 
 
