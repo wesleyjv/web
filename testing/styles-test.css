@@ -4,6 +4,9 @@
 4. Footer */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -28,14 +31,23 @@
     border-bottom: 2px solid #ccc;
     z-index: 1;
     position: relative;
-    border: solid black 5px;
+    border: transparent;
+
+}
+
+.hero-section img {
+    width: 550px; 
+    height: auto;
+
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    margin-right: 30px; /* Space between image and text */
 }
 
 .hero-welcoming-text {
     display: flex;
     height: auto;
     width: auto;
-    margin-top: 150px;
+
     padding: 0;
     justify-content: center;
     align-items: center;
@@ -59,7 +71,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
 }
 
 
