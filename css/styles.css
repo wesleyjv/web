@@ -3,117 +3,87 @@
 3. Header
 4. Footer */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
 }
     
 
-#selected {
-    color: #0088a9;
-}
 
 /* Homepage */
 
 .hero-section {
-    width: auto;
-    height: 820px;
-    background-color: transparent;
-    border: none;
-    background: radial-gradient(circle at 30% 30%, rgba(0, 26, 255, 0.6), rgba(255, 0, 0, 0) 40%),
-                radial-gradient(circle at 70% 40%, rgba(19, 119, 220, 0.6), rgba(255, 0, 0, 0) 40%),
-                radial-gradient(circle at 50% 80%, rgba(0, 136, 169, 1), rgba(255, 0, 0, 0) 40%),
-                #0a0a23;
-    background-size: auto;
-    border-bottom: 2px solid #ccc;
-    z-index: 1;
-    position: relative;
+    height: 550px;
+    margin-bottom: 100px;
 }
 
-.hero-welcoming-text {
-    position: absolute;
+.hero-section a, p {
+    background-color: transparent;
     display: flex;
-    height: 300px;
-    width: 60%;
-    margin-left: 100px;
-    margin-top: 150px;
-    padding: 0;
-    justify-content: left;
-    flex-direction: column;
-    background-color: transparent;
-    z-index: 9999;
-}
-
-.hero-welcoming-text a {
-    background-color: transparent;
-    color: white;
-    width: 150px;
-}
-
-#hero-welcoming-text_bold, #hero-welcoming-text_description {
-    background-color: transparent;
-    padding: 0;
-    margin: 0 0;
-    margin-top: 10px;
-    display: flex;
-    justify-content: left;
     align-items: center;
-    color: white;
+    justify-content: center;
+
+}
+
+.hero-section p {
+    margin-top: 150px;
+    font-weight: 600;
+    font-size: 82px;
+}
+
+.hero-section a {
+    font-weight: 600;
+    font-size: 82px;
 }
 
 
-#hero-welcoming-text_bold {
-    font-size: 56px;
-    font-weight: bold;
-}
-
-#hero-welcoming-text_description {
-    font-size: 24px;
-    color: #999;
-    font-weight: 450;
-    margin-bottom: 15px;
-    
-}
-
-#hero-welcoming-text_bold:hover {
-    color: #3498db;
-    cursor: grab;
-}
-
-#hero-welcoming-text_description:hover {
-    color: #f0f0f0; 
-    cursor: grab;
-}
-
-button[id="hero-about_us-button"]{
-    display: block;             
-    padding: 7px 10px;
-    width: 150px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #2C2C2C;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.hero-section-btn-about_us {
+    padding: 20px 30px;
+    border: transparent;
+    background-color: #fcaf17;
     box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
-    
+    border-radius: 10px;
 }
 
-button[id="hero-about_us-button"]:hover {
-    transition: all 0.3s ease 0s;
-    background-color: #0088a9;  
+.hero-section-btn-get_started {
+    padding: 20px 30px;
+
+    border: transparent;
+    background-color: #fcaf17;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.hero-section-btn-get_started:hover {
     transform: scale(1.05);
-    box-shadow: 8px 12px 20px rgba(19, 119, 220, 0.6);
-
+    transition: all 0.3s ease 0s;
 }
+
+.hero-section-btn-about_us:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease 0s;
+}
+
+.hero-section-buttons {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
 
 /* Reviews Section */
 .reviews-section {
-    margin-top: 100px;
+    height: 800px;
 }
 
 .review_cards {
@@ -123,8 +93,7 @@ button[id="hero-about_us-button"]:hover {
     flex-direction: row;
     height: auto;
     width: auto;
-    
-    margin-bottom: 90px;
+
 }
 
 
@@ -161,7 +130,7 @@ button[id="hero-about_us-button"]:hover {
 
 #review_card:hover {
     transform: scale(1.05);
-    box-shadow: 8px 20px 19px rgba(19, 119, 220, 0.6);
+    box-shadow: 8px 20px 19px gray;
     cursor: pointer;
 }
 
@@ -200,19 +169,20 @@ button[id="hero-about_us-button"]:hover {
     margin-right: 3px;
 }
 
-/* What we offer Section */
+/* What We Offer Section  */
+
 
 .what-we-offer {
-    margin-top: 100px;
-}
-
-.what-we-offer a {
+    width: 85%;
+    height: 500px;
+    background-color: #fcaf17;
     display: flex;
     justify-content: center;
-    font-size: 56px;
-    font-weight: bold;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 15px;
 
-    
+    margin-bottom: 100px;
 }
 
 
@@ -237,6 +207,7 @@ h1, h2 {
 h1 {
     font-size: 200;
     margin: 20px;
+    margin-top: 100px;
 }
 
 h2 {
@@ -437,23 +408,26 @@ button[id="submit"]:hover {
 li, a, button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px; /* Reduced font size */
     color: #000000;
     text-decoration: none;
 }
 
-header{
-    top: 0;
-    left: 0;
-    width: auto;
-    padding: 30px 10%;
+header {
+    position: fixed;
+    top: 10px; /* Adjust the top margin */
+    left: 50%; 
+    transform: translateX(-50%); 
+    border-radius: 50px; /* Slightly smaller border-radius */
+    background-color: white;
+    padding: 15px; /* Reduced padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
-    border-bottom: 2px solid #ccc;
-     
-    
+    color: white;
+    width: 70%; /* Reduced width */
+    z-index: 1000; 
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
 }
 
 .nav_links {
@@ -461,44 +435,51 @@ header{
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px;
+    gap: 15px; /* Reduced gap between links */
+    background-color: #ffffff;
 }
 
 .nav_links li {
+    background-color: #ffffff;
+    font-size: 18px; /* Slightly smaller font size */
     position: relative;
+    color: rgb(0, 0, 0);
 }
 
 .nav_links a {
+    background-color: #ffffff;
     text-decoration: none;
-    color: #333;
-    padding: 10px;
+    color: rgb(0, 0, 0);
+    padding: 8px; /* Reduced padding */
     display: block;
+    font-size: 18px; /* Adjusted font size */
 }
 
 .dropdown {
+    background-color: #000000;
     opacity: 0;
     visibility: hidden;
     position: absolute;
     top: 100%;
     left: 0;
     list-style: none;
-    background-color: #fff;
     padding: 0;
     margin: 0;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateY(-12px);
+    transform: translateY(-10px); /* Slightly less offset */
 }
 
 .dropdown li {
-    width: 150px;
+    width: 140px; /* Reduced dropdown width */
 }
 
 .dropdown a {
-    padding: 10px;
+    padding: 8px; /* Reduced padding */
     color: #333;
+    background-color: rgb(255, 255, 255);
     text-decoration: none;
     display: block;
 }
@@ -507,11 +488,10 @@ header{
     background-color: #f0f0f0;
 }
 
-
 .nav_links li:hover .dropdown {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0); 
+    transform: translateY(0);
 }
 
 .nav_links li a {
@@ -519,47 +499,54 @@ header{
 }
 
 .nav_links li a:hover {
-    color: #0088a9;
+    color: #fcaf17;
     transform: scale(1.05);
 }
 
+.header a {
+    background-color: black;
+}
 
 button[id="contact"] {
     font-family: "Montserrat", sans-serif;
-    padding: 9px 29px;
-    background-color: rgba(0, 136, 169, 1);
+    padding: 10px 24px; /* Slightly reduced padding */
+    background-color: #fcaf17;
     border: none;
-    border-radius: 50px;
+    border-radius: 40px; /* Slightly smaller border-radius */
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    margin-right: 15px; /* Reduced margin */
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
 }
 
 button[id="contact"]:hover {
-    background-color: rgba(0, 136, 169, 0.8);
+    background-color: #fcaf17;
     transition: all 0.3s ease 0s;
     transform: scale(1.05);
-
 }
 
 .logo {
     font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 32px;
-    color: #000000;
+    font-weight: 500;
+    font-size: 24px; /* Reduced logo font size */
+    color: rgb(0, 0, 0);
     text-decoration: none;
     transition: all 0.3s ease 0s;
+    margin-left: 20px; /* Reduced margin */
+    background-color: #ffffff;
+    
 }
 
 .logo:hover {
-    color: #0088a9;
+    color: #fcaf17;
     transition: all 0.3s ease 0s;
     transform: scale(1.05);
 }
 
 
+
 /* Summaries Page */
 #start-section {
-    
     background-color: #f4f4f4;
     padding: 40px;
     text-align: center;
@@ -569,8 +556,8 @@ button[id="contact"]:hover {
 }
 
 #start-section h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 32px; /* Increased font size for visibility */
+    margin-bottom: 20px;
 }
 
 #start-section p {
@@ -585,26 +572,25 @@ button[id="contact"]:hover {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth transition */
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .cta-button:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
 
-
 .download-icon {
-    width: 16px; /* Adjust the size of the icon */
-    height: 16px; /* Adjust the size of the icon */
-    margin-right: 5px; /* Space between the icon and text */
-    vertical-align: middle; /* Aligns the icon with the text */
-    display: inline-block; /* Keeps it inline with text */
-    background-color: transparent;
+    width: 16px; /* Adjusted icon size */
+    height: 16px;
+    margin-right: 5px; /* Spacing between the icon and text */
+    vertical-align: middle;
+    display: inline-block;
 }
 
+/* Cards Section */
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
     gap: 20px;
     padding: 20px;
 }
@@ -615,22 +601,22 @@ button[id="contact"]:hover {
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Added hover effect for visual interaction */
 }
-
 
 .card-title {
     font-size: 18px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .card p {
     margin: 10px 0;
+    font-size: 16px;
 }
 
 .download-btn {
@@ -641,6 +627,8 @@ button[id="contact"]:hover {
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center; /* Center the content */
+    font-size: 14px;
 }
 
 .download-btn:hover {
@@ -661,10 +649,9 @@ button[id="contact"]:hover {
 
 @media (max-width: 600px) {
     #searchInput {
-        width: 100%;
+        width: 100%; /* Make search input responsive */
     }
 }
-
 
 
 

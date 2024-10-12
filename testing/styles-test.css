@@ -115,25 +115,26 @@ button[id="hero-about_us-button"]:hover {
 li, a, button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px; /* Reduced font size */
     color: #000000;
     text-decoration: none;
 }
 
 header {
-    position: absolute;
-    top: 20px; /* Adjust the top margin */
-    left: 50%; /* Position the left side at 50% of the viewport */
-    transform: translateX(-50%); /* Move the header back by 50% of its width to center it */
-    border-radius: 100px;
-    background-color: black;
-    padding: 20px;
+    position: fixed;
+    top: 10px; /* Adjust the top margin */
+    left: 50%; 
+    transform: translateX(-50%); 
+    border-radius: 50px; /* Slightly smaller border-radius */
+    background-color: white;
+    padding: 15px; /* Reduced padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-    width: 80%; /* Keep the width at 80% of the viewport */
-    z-index: 1000; /* Ensure the header stays on top of other content */
+    width: 70%; /* Reduced width */
+    z-index: 1000; 
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
 }
 
 .nav_links {
@@ -141,29 +142,28 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px;
-    background-color: #000000;
-    
+    gap: 15px; /* Reduced gap between links */
+    background-color: #ffffff;
 }
 
 .nav_links li {
-    background-color: #000000;
-    font-size: 21.3333px;
+    background-color: #ffffff;
+    font-size: 18px; /* Slightly smaller font size */
     position: relative;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .nav_links a {
-    background-color: #000000;
+    background-color: #ffffff;
     text-decoration: none;
-    color: white;
-    padding: 10px;
+    color: rgb(0, 0, 0);
+    padding: 8px; /* Reduced padding */
     display: block;
-    font-size: 21.3333px;
+    font-size: 18px; /* Adjusted font size */
 }
 
 .dropdown {
-    background-color: #ffffff;
+    background-color: #000000;
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -176,15 +176,15 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateY(-12px);
+    transform: translateY(-10px); /* Slightly less offset */
 }
 
 .dropdown li {
-    width: 150px;
+    width: 140px; /* Reduced dropdown width */
 }
 
 .dropdown a {
-    padding: 10px;
+    padding: 8px; /* Reduced padding */
     color: #333;
     background-color: rgb(255, 255, 255);
     text-decoration: none;
@@ -195,11 +195,10 @@ header {
     background-color: #f0f0f0;
 }
 
-
 .nav_links li:hover .dropdown {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0); 
+    transform: translateY(0);
 }
 
 .nav_links li a {
@@ -207,7 +206,7 @@ header {
 }
 
 .nav_links li a:hover {
-    color: #0088a9;
+    color: #fcaf17;
     transform: scale(1.05);
 }
 
@@ -215,41 +214,42 @@ header {
     background-color: black;
 }
 
-
 button[id="contact"] {
     font-family: "Montserrat", sans-serif;
-    padding: 9px 29px;
+    padding: 10px 24px; /* Slightly reduced padding */
     background-color: #fcaf17;
     border: none;
-    border-radius: 50px;
+    border-radius: 40px; /* Slightly smaller border-radius */
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    margin-right: 15px; /* Reduced margin */
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
 }
 
 button[id="contact"]:hover {
     background-color: #fcaf17;
     transition: all 0.3s ease 0s;
     transform: scale(1.05);
-
 }
-
 
 .logo {
     font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 28px;
-    color: white;
+    font-weight: 500;
+    font-size: 24px; /* Reduced logo font size */
+    color: rgb(0, 0, 0);
     text-decoration: none;
     transition: all 0.3s ease 0s;
-    margin-left: 30px;
-    background-color: #000000;
+    margin-left: 20px; /* Reduced margin */
+    background-color: #ffffff;
+    
 }
 
 .logo:hover {
-    color: white;
+    color: #fcaf17;
     transition: all 0.3s ease 0s;
     transform: scale(1.05);
 }
+
 
 
 
