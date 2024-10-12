@@ -19,59 +19,68 @@
 /* Homepage */
 
 .hero-section {
+    position: relative; /* Necessary for positioning background shapes */
     height: 550px;
     margin-bottom: 100px;
+    color: white; /* Text color */
+    background-color: #ffffff; /* Hero section background color */
+    overflow: hidden; /* Hide overflow for SVG shapes */
 }
 
-.hero-section a, p {
-    background-color: transparent;
+.hero-section a,
+.hero-section p {
+    background-color: transparent; /* Ensure text elements are transparent */
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: relative; /* Ensure text is above SVG */
+    z-index: 1; /* Bring text above the SVG */
+    color: black;
 }
 
 .hero-section p {
     margin-top: 150px;
     font-weight: 600;
-    font-size: 82px;
+    font-size: 72px; /* Font size for paragraph */
 }
 
 .hero-section a {
     font-weight: 600;
-    font-size: 82px;
+    font-size: 72px; /* Font size for anchor */
 }
 
-
-.hero-section-btn-about_us {
-    padding: 20px 30px;
-    border: transparent;
-    background-color: #fcaf17;
-    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+/* Background SVG */
+.background-svg {
+    position: absolute; /* Positioning of the SVG background */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: 0; /* Send SVG behind text */
+    opacity: 15; /* Opacity for background shapes */
+    pointer-events: none; /* Prevent mouse events on SVG */
 }
 
+/* Button Styles */
+.hero-section-btn-about_us,
 .hero-section-btn-get_started {
     padding: 20px 30px;
-
     border: transparent;
-    background-color: #fcaf17;
+    background-color: #fcaf17; /* Button background color */
     box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
-.hero-section-btn-get_started:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease 0s;
-}
-
+.hero-section-btn-get_started:hover,
 .hero-section-btn-about_us:hover {
     transform: scale(1.05);
     transition: all 0.3s ease 0s;
 }
 
 .hero-section-buttons {
-    margin-top: 130px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -81,9 +90,15 @@
 }
 
 
+
+.hero-section-users {
+
+}
+
+
 /* Reviews Section */
 .reviews-section {
-    height: 800px;
+    height: 500px;
 }
 
 .review_cards {
@@ -126,6 +141,7 @@
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 11px;
 }
 
 #review_card:hover {
@@ -172,8 +188,8 @@
 /* What We Offer Section  */
 
 
-.what-we-offer {
-    width: 85%;
+.what-we-offer-box {
+    width: 90%;
     height: 500px;
     background-color: #fcaf17;
     display: flex;
@@ -181,11 +197,19 @@
     align-items: center;
     margin: 0 auto;
     border-radius: 15px;
-
     margin-bottom: 100px;
 }
 
+.what-we-offer a {
+    margin-top: 150px;
+    font-weight: 800;
+    font-size: 64px; /* Reduced from 72px to 64px */
+    margin-left: 5%;
+}
 
+.dot {
+    color: #fcaf17; /* Dot color */
+}
 /* Contact Page */
 
 .contact-form {
@@ -701,7 +725,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #0088a9;
+    color: #fcaf17;
     transform: scale(1.05);
 
 }
