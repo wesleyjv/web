@@ -185,31 +185,148 @@
     margin-right: 3px;
 }
 
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 /* What We Offer Section  */
 
 
-.what-we-offer-box {
-    width: 90%;
-    height: 500px;
-    background-color: #fcaf17;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    border-radius: 15px;
+.what-we-offer {
+    text-align: center;
     margin-bottom: 100px;
 }
 
 .what-we-offer a {
-    margin-top: 150px;
     font-weight: 800;
-    font-size: 64px; /* Reduced from 72px to 64px */
-    margin-left: 5%;
+    font-size: 64px; 
+    color: #333; /* Change color to dark for better readability */
+    display: block;
+    margin-bottom: 40px; /* Add space below the title */
 }
 
 .dot {
     color: #fcaf17; /* Dot color */
 }
+
+.what-we-offer-box {
+    width: 90%;
+    height: auto; /* Make height auto to adjust based on content */
+    background-color: #fcaf17;
+    display: flex;
+    justify-content: space-around; /* Space the cards evenly */
+    align-items: flex-start; /* Align cards to the top */
+    flex-wrap: wrap; /* Enable cards to wrap on smaller screens */
+    padding: 40px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+/* Styling for the offer cards */
+.what-we-offer {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.what-we-offer a {
+    font-weight: 800;
+    font-size: 64px;
+    color: #333;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.dot {
+    color: #fcaf17;
+}
+
+.what-we-offer-box {
+    width: 90%;
+    background-color: #fcaf17;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 40px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+/* Updated Glassy Effect for Larger Offer Cards */
+.offer-card {
+    width: 320px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex; /* Flexbox to align items inside */
+    flex-direction: column;
+    justify-content: space-between; /* Makes the button stick to the bottom */
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Title inside the offer cards */
+.offer-card h3 {
+    font-size: 1.6rem; /* Larger offer title */
+    color: rgba(0, 0, 0, 0.9); /* Strong contrast for readability */
+    margin-bottom: 10px;
+}
+
+/* Description text inside the offer cards */
+.offer-card p {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 20px;
+    flex-grow: 1; /* Ensures the description grows while button stays at bottom */
+}
+
+/* Enhanced Learn More Button, now at the bottom */
+.offer-card a {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.offer-card a:hover {
+    background-color: #333;
+    color: #fcaf17;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .what-we-offer-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-card {
+        width: 90%;
+        height: auto;
+    }
+}
+
+
+
+
 /* Contact Page */
 
 .contact-form {
@@ -352,6 +469,38 @@ button[id="submit"]:hover {
     font-size: 16px;
 }
 
+/* Study Guide Page  */
+
+.study_guide_tips {
+    width: 90%;
+    height: 500px; /* Make height auto to adjust based on content */
+    background-color: #fcaf17;
+    padding: 40px;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+.study_guide_hero-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    margin-top: 140px;
+}
+
+.study_guide_hero-section a {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.study_guide_tip_box {
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
 
 /* Tutoring Page */
 
