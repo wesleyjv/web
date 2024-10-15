@@ -1,887 +1,914 @@
-/* 1. Homepage
-2. Contact Page
-3. Header
-4. Footer */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+    /* 1. Homepage
+    2. Contact Page
+    3. Header
+    4. Footer */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    font-family: "Space Grotesk", sans-serif;
-}
-    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+    }
+        
 
 
-/* Homepage */
+    /* Homepage */
 
-.hero-section {
-    position: relative; /* Necessary for positioning background shapes */
-    height: 550px;
-    margin-bottom: 100px;
-    color: white; /* Text color */
-    background-color: #ffffff; /* Hero section background color */
-    overflow: hidden; /* Hide overflow for SVG shapes */
-}
-
-.hero-section a,
-.hero-section p {
-    background-color: transparent; /* Ensure text elements are transparent */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative; /* Ensure text is above SVG */
-    z-index: 1; /* Bring text above the SVG */
-    color: black;
-}
-
-.hero-section p {
-    margin-top: 150px;
-    font-weight: 600;
-    font-size: 72px; /* Font size for paragraph */
-}
-
-.hero-section a {
-    font-weight: 600;
-    font-size: 72px; /* Font size for anchor */
-}
-
-/* Background SVG */
-.background-svg {
-    position: absolute; /* Positioning of the SVG background */
-    top: 0;
-    left: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    z-index: 0; /* Send SVG behind text */
-    opacity: 15; /* Opacity for background shapes */
-    pointer-events: none; /* Prevent mouse events on SVG */
-}
-
-/* Button Styles */
-.hero-section-btn-about_us,
-.hero-section-btn-get_started {
-    padding: 20px 30px;
-    border: transparent;
-    background-color: #fcaf17; /* Button background color */
-    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.hero-section-btn-get_started:hover,
-.hero-section-btn-about_us:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease 0s;
-}
-
-.hero-section-buttons {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 20px;
-}
-
-
-
-.hero-section-users {
-
-}
-
-
-/* Reviews Section */
-.reviews-section {
-    height: 500px;
-}
-
-.review_cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    height: auto;
-    width: auto;
-
-}
-
-
-
-.reviews-section a {
-    display: flex;
-    justify-content: center;
-    font-size: 56px;
-    font-weight: bold;
+    .hero-section {
+        position: relative; /* Necessary for positioning background shapes */
+        height: 590px;
+        margin-bottom: 100px;
+        color: white; /* Text color */
+        background-color: #ffffff; /* Hero section background color */
+        overflow: hidden; /* Hide overflow for SVG shapes */
+    }
 
     
-}
-
-.reviews-section h4 {
-    display: flex;
-    justify-content: center;
-    font-weight: normal;
-    color: #999;
-    font-size: 32px;
-
-}
-
-#review_card {
-    height: 250px;
-    width: 300px;
-    margin: 10px;
-    background-color: #ffffff;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 11px;
-}
-
-#review_card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
-#review_card .user-info {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#review_card .user-name {
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-#review_card .date {
-    color: #999;
-    font-size: 12px;
-    margin-bottom: 7px;
-}
-
-#review_card .review-text {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #333;
-}
-
-#review_card .rating {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-}
-
-#review_card .star {
-    color: #FFD700;
-    margin-right: 3px;
-}
-
-button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* What We Offer Section  */
-
-
-.what-we-offer {
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-.what-we-offer a {
-    font-weight: 800;
-    font-size: 64px; 
-    color: #333; /* Change color to dark for better readability */
-    display: block;
-    margin-bottom: 40px; /* Add space below the title */
-}
-
-.dot {
-    color: #fcaf17; /* Dot color */
-}
-
-.what-we-offer-box {
-    width: 90%;
-    height: auto; /* Make height auto to adjust based on content */
-    background-color: #fcaf17;
-    display: flex;
-    justify-content: space-around; /* Space the cards evenly */
-    align-items: flex-start; /* Align cards to the top */
-    flex-wrap: wrap; /* Enable cards to wrap on smaller screens */
-    padding: 40px;
-    margin: 0 auto;
-    border-radius: 15px;
-}
-
-/* Styling for the offer cards */
-.what-we-offer {
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-.what-we-offer a {
-    font-weight: 800;
-    font-size: 64px;
-    color: #333;
-    display: block;
-    margin-bottom: 40px;
-}
-
-.dot {
-    color: #fcaf17;
-}
-
-.what-we-offer-box {
-    width: 90%;
-    background-color: #fcaf17;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 40px;
-    margin: 0 auto;
-    border-radius: 15px;
-}
-
-/* Updated Glassy Effect for Larger Offer Cards */
-.offer-card {
-    width: 320px;
-    height: 400px;
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    display: flex; /* Flexbox to align items inside */
-    flex-direction: column;
-    justify-content: space-between; /* Makes the button stick to the bottom */
-    margin-bottom: 40px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.offer-card:hover {
-    transform: translateY(-10px); /* Lift effect */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.12); /* Elevated shadow */
-}
-
-/* Title inside the offer cards */
-.offer-card h3 {
-    font-size: 22px;
-    font-weight: 600;
-    color: #333; /* Darker text for contrast */
-    margin-bottom: 10px;
-}
-
-/* Description text inside the offer cards */
-.offer-card p {
-    font-size: 1.2rem;
-    color: rgba(0, 0, 0, 0.85);
-    margin-bottom: 20px;
-    flex-grow: 1; /* Ensures the description grows while button stays at bottom */
-}
-
-/* Enhanced Learn More Button, now at the bottom */
-.offer-card a {
-    display: inline-block;
-    padding: 14px 28px;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: #333;
-    font-weight: bold;
-    font-size: 1rem;
-    text-decoration: none;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.offer-card a:hover {
-    background-color: #333;
-    color: #fcaf17;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .what-we-offer-box {
-        flex-direction: column;
+    .hero-section a,
+    .hero-section p {
+        background-color: transparent; /* Ensure text elements are transparent */
+        display: flex;
         align-items: center;
+        justify-content: center;
+        position: relative; /* Ensure text is above SVG */
+        z-index: 1; /* Bring text above the SVG */
+        color: black;
     }
 
-    .offer-card {
-        width: 90%;
+
+
+    .hero-section h1 {
+        background-color: transparent; /* Ensure text elements are transparent */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-size: 15px;
+        position: relative; /* Ensure text is above SVG */
+        z-index: 1; /* Bring text above the SVG */
+        color: black;
+    }
+
+    .hero-section p {
+        margin-top: 90px;
+        font-weight: 400;
+        font-size: 72px; /* Font size for paragraph */
+    }
+
+
+    /* Background SVG */
+    .background-svg {
+        position: absolute; /* Positioning of the SVG background */
+        top: 0;
+        left: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        z-index: 0; /* Send SVG behind text */
+        opacity: 15; /* Opacity for background shapes */
+        pointer-events: none; /* Prevent mouse events on SVG */
+    }
+
+    /* Button Styles */
+    .hero-section-btn-about_us,
+    .hero-section-btn-get_started {
+        padding: 20px 30px;
+        border: transparent;
+        background-color: #fcaf17; /* Button background color */
+        box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .hero-section-btn-get_started:hover,
+    .hero-section-btn-about_us:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease 0s;
+    }
+
+    .hero-section-buttons {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+
+
+    .hero-section-users {
+
+    }
+
+
+    /* Reviews Section */
+    .reviews-section {
+        height: 500px;
+    }
+
+    .review_cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
         height: auto;
+        width: auto;
+
     }
-}
+
+
+
+    .reviews-section a {
+        display: flex;
+        justify-content: center;
+        font-size: 56px;
+        font-weight: bold;
+
+        
+    }
+
+    .reviews-section h4 {
+        display: flex;
+        justify-content: center;
+        font-weight: normal;
+        color: #999;
+        font-size: 32px;
+
+    }
+
+    #review_card {
+        height: 250px;
+        width: 300px;
+        margin: 10px;
+        background-color: #ffffff;
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 11px;
+    }
+
+    #review_card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    #review_card .user-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #review_card .user-name {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    #review_card .date {
+        color: #999;
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
+
+    #review_card .review-text {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #333;
+    }
+
+    #review_card .rating {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    #review_card .star {
+        color: #FFD700;
+        margin-right: 3px;
+    }
+
+    button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    /* What We Offer Section  */
+
+
+    .what-we-offer {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .what-we-offer a {
+        font-weight: 800;
+        font-size: 64px; 
+        color: #333; /* Change color to dark for better readability */
+        display: block;
+        margin-bottom: 40px; /* Add space below the title */
+    }
+
+    .dot {
+        color: #fcaf17; /* Dot color */
+    }
+
+    .what-we-offer-box {
+        width: 90%;
+        height: auto; /* Make height auto to adjust based on content */
+        background-color: #fcaf17;
+        display: flex;
+        justify-content: space-around; /* Space the cards evenly */
+        align-items: flex-start; /* Align cards to the top */
+        flex-wrap: wrap; /* Enable cards to wrap on smaller screens */
+        padding: 40px;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+
+    /* Styling for the offer cards */
+    .what-we-offer {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .what-we-offer a {
+        font-weight: 800;
+        font-size: 64px;
+        color: #333;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .dot {
+        color: #fcaf17;
+    }
+
+    .what-we-offer-box {
+        width: 90%;
+        background-color: #fcaf17;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 40px;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+
+    /* Updated Glassy Effect for Larger Offer Cards */
+    .offer-card {
+        width: 320px;
+        height: 400px;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        display: flex; /* Flexbox to align items inside */
+        flex-direction: column;
+        justify-content: space-between; /* Makes the button stick to the bottom */
+        margin-bottom: 40px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .offer-card:hover {
+        transform: translateY(-10px); /* Lift effect */
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.12); /* Elevated shadow */
+    }
+
+    /* Title inside the offer cards */
+    .offer-card h3 {
+        font-size: 22px;
+        font-weight: 600;
+        color: #333; /* Darker text for contrast */
+        margin-bottom: 10px;
+    }
+
+    /* Description text inside the offer cards */
+    .offer-card p {
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.85);
+        margin-bottom: 20px;
+        flex-grow: 1; /* Ensures the description grows while button stays at bottom */
+    }
+
+    /* Enhanced Learn More Button, now at the bottom */
+    .offer-card a {
+        display: inline-block;
+        padding: 14px 28px;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #333;
+        font-weight: bold;
+        font-size: 1rem;
+        text-decoration: none;
+        border-radius: 25px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .offer-card a:hover {
+        background-color: #333;
+        color: #fcaf17;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .what-we-offer-box {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .offer-card {
+            width: 90%;
+            height: auto;
+        }
+    }
 
 
 
 
-/* Contact Page */
+    /* Contact Page */
 
-.contact-form {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-
-
-h1, h2 {
-    text-align: center;
-}
-
-h1 {
-    font-size: 200;
-    margin: 20px;
-    margin-top: 100px;
-}
-
-h2 {
-    font-size: smaller;
-    text-decoration: dashed;
-    margin: 30px;
-}
-
-fieldset {
-    border-width: 0;
-    font-weight: normal;
-    padding: 10px;
-}
-
-input[type="name"] {
-    display: flex;
-    margin-bottom: 10px;
-    width: 350px;
-    padding: 10px;
-    font-size: 16px; 
-    border: 0px solid #ccc; 
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
-}
-
-input[type="email"] {
-    display: flex;
-    margin-bottom: 10px;
-    width: 350px;
-    padding: 10px; 
-    font-size: 16px; 
-    border: 0px solid #ccc; 
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
-}
-
-input[type="tel"] {
-    display: flex;
-    margin-bottom: 10px;
-    width: 350px;
-    padding: 10px; 
-    font-size: 16px; 
-    border: 0px solid #ccc; 
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
-}
-
-textarea[id="request"] {
-    display: flex;
-    resize: none; 
-    margin-bottom: 10px;
-    width: 350px;
-    height: 190px;
-    padding: 10px;
-    font-size: 16px;
-    border: 0px solid #ccc; 
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
-}
+    .contact-form {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
 
 
-form {
-    display: block;
-}
 
-button[id="submit"]{
-    display: block;             
-    margin: 30px auto;
-    width: 200px;
-    padding: 15px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #2C2C2C;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
-    
-}
+    h1, h2 {
+        text-align: center;
+    }
 
-button[id="submit"]:hover {
-    transition: all 0.3s ease 0s;
-    background-color: #777575;  
-    transform: scale(1.05);
-}
+    h1 {
+        font-size: 200;
+        margin: 20px;
+        margin-top: 30px;
+    }
 
-.kleur {
-    color: red;
-}
-/* About us Page */
+    h2 {
+        font-size: smaller;
+        text-decoration: dashed;
+        margin: 30px;
+    }
 
-.aboutus {
-    display: flex;
-    justify-content: right;
-    flex-direction: column;
-    width: 900px;
-    height: 100vh;
-    margin-bottom: 50px;
-    margin-top: 100px;
+    fieldset {
+        border-width: 0;
+        font-weight: normal;
+        padding: 10px;
+    }
+
+    input[type="name"] {
+        display: flex;
+        margin-bottom: 10px;
+        width: 350px;
+        padding: 10px;
+        font-size: 16px; 
+        border: 0px solid #ccc; 
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    input[type="email"] {
+        display: flex;
+        margin-bottom: 10px;
+        width: 350px;
+        padding: 10px; 
+        font-size: 16px; 
+        border: 0px solid #ccc; 
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    input[type="tel"] {
+        display: flex;
+        margin-bottom: 10px;
+        width: 350px;
+        padding: 10px; 
+        font-size: 16px; 
+        border: 0px solid #ccc; 
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    textarea[id="request"] {
+        display: flex;
+        resize: none; 
+        margin-bottom: 10px;
+        width: 350px;
+        height: 190px;
+        padding: 10px;
+        font-size: 16px;
+        border: 0px solid #ccc; 
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+    }
 
 
-}
+    form {
+        display: block;
+    }
 
-.aboutus a {
-    font-weight: bold;
-    font-size: 32px;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-bottom: 15px;
-}
+    button[id="submit"]{
+        display: block;             
+        margin: 30px auto;
+        width: 200px;
+        padding: 15px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #2C2C2C;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+        
+    }
 
-.aboutus p {
-    font-weight: normal;
-    font-size: 16px;
-    margin-left: 100px;
-}
+    button[id="submit"]:hover {
+        transition: all 0.3s ease 0s;
+        background-color: #777575;  
+        transform: scale(1.05);
+    }
 
-.aboutus dl {
-    margin-left: 100px;
-}
+    .kleur {
+        color: red;
+    }
+    /* About us Page */
 
-.aboutus dl li {
-    font-weight: normal;
-    font-size: 16px;
-}
+    .aboutus {
+        display: flex;
+        justify-content: right;
+        flex-direction: column;
+        width: 900px;
+        height: 100vh;
+    }
 
-/* Study Guide Page  */
+    .aboutus a {
+        font-weight: bold;
+        font-size: 32px;
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-bottom: 15px;
+    }
 
-.study_guide_tips {
-    width: 90%;
-    height: 500px; /* Make height auto to adjust based on content */
-    background-color: #fcaf17;
-    padding: 40px;
+    .aboutus p {
+        font-weight: normal;
+        font-size: 16px;
+        margin-left: 100px;
+    }
+
+    .aboutus dl {
+        margin-left: 100px;
+    }
+
+    .aboutus dl li {
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    /* Study Guide Page  */
+
+    .study_guide_tips {
+        width: 90%;
+        height: 500px; /* Make height auto to adjust based on content */
+        background-color: #fcaf17;
+        padding: 40px;
+        margin: 0 auto;
+        border-radius: 15px;
+        margin-bottom: 100px;
+    }
+
+    .study_guide_hero-section {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+        margin-top: 140px;
+    }
+
+    .study_guide_hero-section a {
+        font-size: 72px;
+        font-weight: 700;
+    }
+
+    .study_guide_tip_box {
+        width: 100%;
+        background-color: white;
+        padding: 40px;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+
+    /* Tutoring Page */
+
+    .container {
+    width: 80%;
     margin: 0 auto;
-    border-radius: 15px;
-    margin-bottom: 100px;
-}
-
-.study_guide_hero-section {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 150px;
-    margin-top: 140px;
-}
-
-.study_guide_hero-section a {
-    font-size: 72px;
-    font-weight: 700;
-}
-
-.study_guide_tip_box {
-    width: 100%;
-    background-color: white;
-    padding: 40px;
-    margin: 0 auto;
-    border-radius: 15px;
-}
-
-/* Tutoring Page */
-
-.tutoring-hero-section {
-    width: auto;
-    height: 620px;
-    background-color: transparent;
-    border: none;
-    background: radial-gradient(circle at 30% 30%, rgba(0, 26, 255, 0.6), rgba(255, 0, 0, 0) 40%),
-                radial-gradient(circle at 70% 40%, rgba(19, 119, 220, 0.6), rgba(255, 0, 0, 0) 40%),
-                radial-gradient(circle at 50% 80%, rgba(0, 136, 169, 1), rgba(255, 0, 0, 0) 40%),
-                #0a0a23;
-    background-size: auto;
-    border-bottom: 2px solid #ccc;
-    z-index: 1;
-    position: relative;
+    padding: 20px;
 }
 
 
-.tutoring-hero-welcoming-text {
-    position: absolute;
-    display: flex;
-    height: 300px;
-    width: 60%;
-    margin-left: 100px;
-    margin-top: 150px;
-    padding: 0;
-    justify-content: center;
-    flex-direction: column;
-    background-color: transparent;
-    z-index: 9999;
-}
-
-.tutoring-hero-welcoming-text a {
-    background-color: transparent;
-    color: white;
-    width: 150px;
-}
-
-#tutoring-hero-welcoming-text_bold, #tutoring-hero-welcoming-text_description {
-    background-color: transparent;
-    padding: 0;
-    margin: 0 0;
-    margin-top: 10px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    color: white;
-}
-
-
-#tutoring-hero-welcoming-text_bold {
-    font-size: 56px;
-    font-weight: bold;
-}
-
-#tutoring-hero-welcoming-text_description {
-    font-size: 24px;
-    color: #999;
-    font-weight: 450;
-    margin-bottom: 15px;
-    
-}
-
-#tutoring-hero-welcoming-text_bold:hover {
-    color: #3498db;
-    cursor: grab;
-}
-
-#tutoring-hero-welcoming-text_description:hover {
-    color: #f0f0f0; 
-    cursor: grab;
-}
-
-/* Header CSS */
-
-
-li, a, button{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 14px; /* Reduced font size */
-    color: #000000;
-    text-decoration: none;
-}
-
-header {
-    position: fixed;
-    top: 10px; /* Adjust the top margin */
-    left: 50%; 
-    transform: translateX(-50%); 
-    border-radius: 50px; /* Slightly smaller border-radius */
-    background-color: white;
-    padding: 15px; /* Reduced padding */
+.search-filter-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    color: white;
-    width: 70%; /* Reduced width */
-    z-index: 1000; 
-    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
-}
-
-.nav_links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 15px; /* Reduced gap between links */
-    background-color: #ffffff;
-}
-
-.nav_links li {
-    background-color: #ffffff;
-    font-size: 18px; /* Slightly smaller font size */
-    position: relative;
-    color: rgb(0, 0, 0);
-}
-
-.nav_links a {
-    background-color: #ffffff;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 8px; /* Reduced padding */
-    display: block;
-    font-size: 18px; /* Adjusted font size */
-}
-
-.dropdown {
-    background-color: #000000;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateY(-10px); /* Slightly less offset */
-}
-
-.dropdown li {
-    width: 140px; /* Reduced dropdown width */
-}
-
-.dropdown a {
-    padding: 8px; /* Reduced padding */
-    color: #333;
-    background-color: rgb(255, 255, 255);
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown a:hover {
-    background-color: #f0f0f0;
-}
-
-.nav_links li:hover .dropdown {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.nav_links li a {
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover {
-    color: #fcaf17;
-    transform: scale(1.05);
-}
-
-.header a {
-    background-color: black;
-}
-
-button[id="contact"] {
-    font-family: "Montserrat", sans-serif;
-    padding: 10px 24px; /* Slightly reduced padding */
-    background-color: #fcaf17;
-    border: none;
-    border-radius: 40px; /* Slightly smaller border-radius */
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    margin-right: 15px; /* Reduced margin */
-    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
-}
-
-button[id="contact"]:hover {
-    background-color: #fcaf17;
-    transition: all 0.3s ease 0s;
-    transform: scale(1.05);
-}
-
-.logo {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 24px; /* Reduced logo font size */
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
-    margin-left: 20px; /* Reduced margin */
-    background-color: #ffffff;
-    
-}
-
-.logo:hover {
-    color: #fcaf17;
-    transition: all 0.3s ease 0s;
-    transform: scale(1.05);
-}
-
-
-
-/* Summaries Page */
-#start-section {
-    background-color: #f4f4f4;
-    padding: 40px;
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 100px;
-    border-radius: 10px;
-}
-
-#start-section h1 {
-    font-size: 32px; /* Increased font size for visibility */
     margin-bottom: 20px;
+    border: solid red 5px;
 }
 
-#start-section p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: #007BFF; /* Blue background */
-    color: white; /* White text */
-    padding: 10px 20px;
+#search-bar {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    font-size: 16px;
 }
 
-.cta-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+.filter-bar select {
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.download-icon {
-    width: 16px; /* Adjusted icon size */
-    height: 16px;
-    margin-right: 5px; /* Spacing between the icon and text */
-    vertical-align: middle;
-    display: inline-block;
-}
-
-/* Cards Section */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+/* Tutors list */
+.tutors-list {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
 }
 
-.card {
+/* Tutor card */
+.tutor-card {
     background-color: white;
-    border: 1px solid #ccc;
+    width: 300px;
+    padding: 20px;
     border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.card:hover {
-    transform: translateY(-5px); /* Added hover effect for visual interaction */
+/* Profile picture */
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
-.card-title {
-    font-size: 18px;
+/* Tutor details */
+.tutor-name {
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.card p {
-    margin: 10px 0;
-    font-size: 16px;
+.tutor-rating {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-.download-btn {
-    background-color: #f0f0f0;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center the content */
+.tutor-description {
     font-size: 14px;
+    margin-bottom: 15px;
+    color: #666;
 }
 
-.download-btn:hover {
-    background-color: #ddd;
-}
-
-#searchInput {
-    padding: 10px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+/* Book Now button */
+.book-now-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
     font-size: 16px;
-    margin-bottom: 80px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    cursor: pointer;
 }
 
-@media (max-width: 600px) {
-    #searchInput {
-        width: 100%; /* Make search input responsive */
+.book-now-btn:hover {
+    background-color: #0056b3;
+}
+
+    /* Header CSS */
+
+
+    li, a, button{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 14px; /* Reduced font size */
+        color: #000000;
+        text-decoration: none;
     }
-}
+
+    header{
+        top: 0;
+        left: 0;
+        width: auto;
+        padding: 30px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        border-bottom: 2px solid #ccc; 
+        position: sticky;
+        height: 80px;
+    }
+
+    .nav_links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 15px; /* Reduced gap between links */
+        background-color: #ffffff;
+    }
+
+    .nav_links li {
+        background-color: #ffffff;
+        font-size: 18px; /* Slightly smaller font size */
+        position: relative;
+        color: rgb(0, 0, 0);
+    }
+
+    .nav_links a {
+        background-color: #ffffff;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        padding: 8px; /* Reduced padding */
+        display: block;
+        font-size: 18px; /* Adjusted font size */
+    }
+
+    .dropdown {
+        background-color: #000000;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(-10px); /* Slightly less offset */
+    }
+
+    .dropdown li {
+        width: 140px; /* Reduced dropdown width */
+    }
+
+    .dropdown a {
+        padding: 8px; /* Reduced padding */
+        color: #333;
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .nav_links li:hover .dropdown {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+    }
+
+    .nav_links li a:hover {
+        color: #fcaf17;
+        transform: scale(1.05);
+    }
+
+    .header a {
+        background-color: black;
+    }
+
+    button[id="contact"] {
+        font-family: "Montserrat", sans-serif;
+        padding: 10px 24px; /* Slightly reduced padding */
+        background-color: #fcaf17;
+        border: none;
+        border-radius: 40px; /* Slightly smaller border-radius */
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        margin-right: 15px; /* Reduced margin */
+        box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    button[id="contact"]:hover {
+        background-color: #fcaf17;
+        transition: all 0.3s ease 0s;
+        transform: scale(1.05);
+    }
+
+    .logo {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 24px; /* Reduced logo font size */
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+        margin-left: 20px; /* Reduced margin */
+        background-color: #ffffff;
+        
+    }
+
+    .logo:hover {
+        color: #fcaf17;
+        transition: all 0.3s ease 0s;
+        transform: scale(1.05);
+    }
 
 
 
-/* Footer CSS */
-footer {
-    background-color: white;  
-    color: #333; 
-    padding: 20px;
-    text-align: center;
-    border: none; 
-    border-top: 2px solid #ccc;
-    width: 100%;
-     
-}
+    /* Summaries Page */
+    #start-section {
+        background-color: #f4f4f4;
+        padding: 40px;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 100px;
+        border-radius: 10px;
+    }
 
-footer nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border: none;
-    display: inline-block;
-}
+    #start-section h1 {
+        font-size: 32px; /* Increased font size for visibility */
+        margin-bottom: 20px;
+    }
 
-footer nav ul li {
-    display: inline;
-    margin: 0 15px;
-    border: none;
-}
+    #start-section p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
 
-footer address {
-    margin: 20px 0;
-    color: #333;  
-    border: none;
-}
+    .cta-button {
+        display: inline-block;
+        background-color: #007BFF; /* Blue background */
+        color: white; /* White text */
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s ease; /* Smooth transition */
+    }
 
-footer p {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #333; 
-    border: none;
-}
+    .cta-button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
 
-footer a {
-    color: #333;  
-    text-decoration: none;
-    border: none;
-}
+    .download-icon {
+        width: 16px; /* Adjusted icon size */
+        height: 16px;
+        margin-right: 5px; /* Spacing between the icon and text */
+        vertical-align: middle;
+        display: inline-block;
+    }
 
-footer a:hover {
-    color: #fcaf17;
-    transform: scale(1.05);
+    /* Cards Section */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+        gap: 20px;
+        padding: 20px;
+    }
 
-}
+    .card {
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px); /* Added hover effect for visual interaction */
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .download-btn {
+        background-color: #f0f0f0;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the content */
+        font-size: 14px;
+    }
+
+    .download-btn:hover {
+        background-color: #ddd;
+    }
+
+    #searchInput {
+        padding: 10px;
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        margin-bottom: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (max-width: 600px) {
+        #searchInput {
+            width: 100%; /* Make search input responsive */
+        }
+    }
+
+
+
+    /* Footer CSS */
+    footer {
+        background-color: white;  
+        color: #333; 
+        padding: 20px;
+        text-align: center;
+        border: none; 
+        border-top: 2px solid #ccc;
+        width: 100%;
+        height: 20vh;
+        
+    }
+
+    footer nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border: none;
+        display: inline-block;
+    }
+
+    footer nav ul li {
+        display: inline;
+        margin: 0 15px;
+        border: none;
+    }
+
+    footer address {
+        margin: 20px 0;
+        color: #333;  
+        border: none;
+    }
+
+    footer p {
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #333; 
+        border: none;
+    }
+
+    footer a {
+        color: #333;  
+        text-decoration: none;
+        border: none;
+    }
+
+    footer a:hover {
+        color: #fcaf17;
+        transform: scale(1.05);
+
+    }
 
 

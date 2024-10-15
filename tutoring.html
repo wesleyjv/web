@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="StudySmart is your one-stop destination for study guides, tutoring, and educational resources. Join our vibrant community and unlock your academic potential!">
-    <meta name="keywords" content="study, tutoring, study guides, educational resources, learning, online tutoring">
-    <meta name="author" content="StudySmart">
-    <title>StudySmart - Home</title>
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <title>Tutor Listings</title>
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
-
 <body>
     <header>
-        <a href="index.html" class="logo" aria-label="Homepage">StudySmart.</a>
+        <a href="index.html" class="logo" id="selected" aria-label="Homepage">StudySmart.</a>
         <nav>
             <ul class="nav_links">
                 <li><a href="study_guide.html">Study Guide</a></li>
-                <li><a href="tutoring.html" id="selected" >Tutoring <span class="arrow">&#9660;</span></a> <!-- Arrow added here -->
+                <li><a href="tutoring.html">Tutoring <span class="arrow">&#9660;</span></a> <!-- Arrow added here -->
                     <ul class="dropdown">
                         <li><a href="#">Online Tutoring</a></li>
                         <li><a href="#">In-Person Tutoring</a></li>
@@ -40,16 +32,57 @@
         </nav>
         <a href="contact.html" class="contact"><button id="contact">Contact</button></a>
     </header>
+    <!-- Main Container -->
+    <main>
+        <!-- Search Bar and Filter -->
+        <header class="search-filter-container">
+            <input type="text" id="search-bar" placeholder="Search for tutors..." />
 
-    <section class="tutoring-hero-section">
-        <section class="tutoring-hero-welcoming-text">
-            <p id="tutoring-hero-welcoming-text_bold">Unlock Your Full Potential</p>
-            <p id="tutoring-hero-welcoming-text_bold"> Study Smarter, Not Harder!</p>
-            <p id="tutoring-hero-welcoming-text_description">Get acces to summaries and notes, tutoring and more!</p>
+            <!-- Filter Bar -->
+            <nav class="filter-bar">
+                <select id="subject-filter">
+                    <option value="">Select Subject</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="english">English</option>
+                    <option value="history">History</option>
+                </select>
+                <select id="rating-filter">
+                    <option value="">Select Rating</option>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars & Up</option>
+                    <option value="3">3 Stars & Up</option>
+                </select>
+            </nav>
+        </header>
+
+        <!-- Tutors List -->
+        <section class="tutors-list">
+            <!-- Tutor Card 1 -->
+            <article class="tutor-card">
+                <img src="profile1.jpg" alt="Tutor Profile Picture" class="profile-picture">
+                <section class="tutor-details">
+                    <h2 class="tutor-name">John Doe</h2>
+                    <p class="tutor-rating">⭐⭐⭐⭐⭐</p>
+                    <p class="tutor-description">John has 5 years of experience teaching Math and Physics. Known for his interactive teaching style.</p>
+                    <button class="book-now-btn">Book Now</button>
+                </section>
+            </article>
+
+            <!-- Tutor Card 2 -->
+            <article class="tutor-card">
+                <img src="profile2.jpg" alt="Tutor Profile Picture" class="profile-picture">
+                <section class="tutor-details">
+                    <h2 class="tutor-name">Jane Smith</h2>
+                    <p class="tutor-rating">⭐⭐⭐⭐☆</p>
+                    <p class="tutor-description">Jane is an experienced English tutor specializing in helping students prepare for exams.</p>
+                    <button class="book-now-btn">Book Now</button>
+                </section>
+            </article>
+
+            <!-- Add more tutor cards as needed -->
         </section>
-    </section>
-    
-
+    </main>
     <footer>
         <nav>
             <ul>
@@ -66,3 +99,4 @@
         <p>&copy; 2024 StudySmart. All rights reserved.</p>
     </footer>
 </body>
+</html>
