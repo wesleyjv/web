@@ -11,21 +11,22 @@
     <title>StudySmart - Home</title>
     <link rel="icon" type="image/x-icon" href="img/logo.png">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <a href="index.html" class="logo" id="selected" aria-label="Homepage">StudySmart.</a>
         <nav>
             <ul class="nav_links">
                 <li><a href="study_guide.html">Study Guide</a></li>
-                <li><a href="tutoring.html">Tutoring <span class="arrow">&#9660;</span></a> <!-- Arrow added here -->
+                <li><a href="tutoring.html">Tutoring <span class="arrow">&#9660;</span></a>
                     <ul class="dropdown">
                         <li><a href="#">Online Tutoring</a></li>
                         <li><a href="#">In-Person Tutoring</a></li>
                     </ul>
                 </li>
-                <li><a href="summaries.html">Summaries <span class="arrow">&#9660;</span></a> <!-- Arrow added here -->
+                <li><a href="summaries.html">Summaries <span class="arrow">&#9660;</span></a>
                     <ul class="dropdown">
                         <li><a href="summaries.html">All</a></li>
                         <li><a href="#">Mathematics</a></li>
@@ -40,127 +41,96 @@
         <a href="contact.html" class="contact"><button id="contact">Contact</button></a>
     </header>
 
-
     <section class="hero-section">
-
-
-        <svg viewBox="0 0 100 100" class="background-svg">
-            <circle cx="15" cy="15" r="10" fill="rgba(252, 175, 23, 0.3)" /> 
-            <circle cx="80" cy="80" r="20" fill="rgba(252, 175, 23, 0.4)" />
-        </svg>
-        
-        <p>
+        <p class="hero-headtext">
             Studying made easier
         </p>
-
-        <h1>
-            At StudySmart, we provide comprehensive study guides, personalized tutoring sessions, and concise summary notes designed to help you master your subjects. Join our community of learners and take the first step towards academic excellence!
-        </h1>
-
-
-        <article class="hero-section-buttons"> 
-            <a href="#"><button class="hero-section-btn-about_us">More about us</button></a>
+        <a class="hero-subtext">
+            Improve your overall studying and grades
+        </a>
+        <article class="hero-section-buttons">
             <a href="#get-started"><button class="hero-section-btn-get_started">Get Started</button></a>
         </article>
-        
-
-
     </section>
 
+    <section class="info-section">
+        <article class="what-we-offer-background"></article>
+        <section class="what-we-offer" id="get-started">
+            <a>What we offer.</a>
+            <section class="what-we-offer-box">
+                <article class="offer-card">
+                    <h3>Study Guides</h3>
+                    <p>Comprehensive guides to help you master key concepts, structured for effective learning.</p>
+                    <a href="study_guide.html">Learn More</a>
+                </article>
+                <article class="offer-card">
+                    <h3>Student Tutoring</h3>
+                    <p>One-on-one tutoring sessions to support you in achieving academic excellence.</p>
+                    <a href="tutoring.html">Learn More</a>
+                </article>
+                <article class="offer-card">
+                    <h3>Summaries Notes</h3>
+                    <p>Concise notes that break down complex topics into digestible pieces for quick review.</p>
+                    <a href="summaries.html">Learn More</a>
+                </article>
+            </section>
+        </section>
 
-
-
-    <section class="what-we-offer" id="get-started">
-        <a>
-            What we offer<span class="dot">.</span>
-        </a>
-    
-        <section class="what-we-offer-box">
-            <!-- Offer 1: Study Guides -->
-            <article class="offer-card">
-                <h3>Study Guides</h3>
-                <p>Comprehensive guides to help you master key concepts, structured for effective learning.</p>
-                <a href="study_guide.html">Learn More</a>
-            </article>
-    
-            <!-- Offer 2: Student Tutoring -->
-            <article class="offer-card">
-                <h3>Student Tutoring</h3>
-                <p>One-on-one tutoring sessions to support you in achieving academic excellence.</p>
-                <a href="tutoring.html">Learn More</a>
-            </article>
-    
-            <!-- Offer 3: Summaries Notes -->
-            <article class="offer-card">
-                <h3>Summaries Notes</h3>
-                <p>Concise notes that break down complex topics into digestible pieces for quick review.</p>
-                <a href="summaries.html">Learn More</a>
-            </article>
+        <section class="reviews-section">
+            <a>What do our users say?</a>
+            <h4>Check out these reviews!</h4>
+            <section class="review_cards">
+                <article id="review_card">
+                    <section class="user-info">
+                        <h2 class="user-name">John Doe</h2>
+                        <time class="date" datetime="2023-09-28">September 28, 2023</time>
+                    </section>
+                    <section class="review-text">
+                        <p>This is a great product! I have been using it for a week and it has exceeded my expectations.</p>
+                    </section>
+                    <section class="rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </section>
+                </article>
+                <article id="review_card">
+                    <section class="user-info">
+                        <h2 class="user-name">Jane Smith</h2>
+                        <time class="date" datetime="2023-09-28">August 25, 2023</time>
+                    </section>
+                    <section class="review-text">
+                        <p>Amazing service! My grades have never been better.</p>
+                    </section>
+                    <section class="rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </section>
+                </article>
+                <article id="review_card">
+                    <section class="user-info">
+                        <h2 class="user-name">Richard Roe</h2>
+                        <time class="date" datetime="2023-09-28">December 14, 2023</time>
+                    </section>
+                    <section class="review-text">
+                        <p>Those summaries really helped me a lot! Thanks :]</p>
+                    </section>
+                    <section class="rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </section>
+                </article>
+            </section>
         </section>
     </section>
     
-
-    <section class="reviews-section">
-        <a>What do our users say?</a>
-        <h4>Check out these reviews!</h4>
-        <section class="review_cards">
-            <article id="review_card">
-                <section class="user-info">
-                    <h2 class="user-name">John Doe</h2>
-                    <time class="date" datetime="2023-09-28">September 28, 2023</time>
-                </section>
-                <section class="review-text">
-                    <p>This is a great product! I have been using it for a week and it has exceeded my expectations.</p>
-                </section>
-                <section class="rating">
-                    <span class="star">⭐</span>
-                    <span class="star">⭐</span>
-                    <span class="star">⭐</span>
-                    <span class="star">⭐</span>
-                    <span class="star">⭐</span>
-                </section>
-
-            </article>
-
-            <article id="review_card">
-                <section class="user-info">
-                    <h2 class="user-name">Jane Smith</h2>
-                    <time class="date" datetime="2023-09-28">August 25, 2023</time>
-                </section>
-                <section class="review-text">
-                    <p>Amazing service! My grades have never been better.</p>
-                </section>
-                <section class="rating">
-                    <span class="star">⭐</span>
-                    <span class="star">⭐</span>
-                    <span class="star">⭐</span>
-                    <span class="star">⭐</span>
-                    <span class="star">⭐</span>
-                </section>
-
-            </article>
-            <article id="review_card">
-                <section class="user-info">
-                    <h2 class="user-name">Richard Roe</h2>
-                    <time class="date" datetime="2023-09-28">December 14, 2023</time>
-                </section>
-                <section class="review-text">
-                    <p>Those summaries really helped me a lot! Thanks :]</p>
-                </section>
-                <section class="rating">
-                    <span class="star">⭐</span>
-                    <span class="star">⭐</span>
-                    <span class="star">⭐</span>
-                    <span class="star">⭐</span>
-                </section>
-
-            </article>
-            
-        </section>
-
-
-    </section>
-
 
     <script src="reviews.js"></script>
     <footer>
@@ -179,3 +149,5 @@
         <p>&copy; 2024 StudySmart. All rights reserved.</p>
     </footer>
 </body>
+
+</html>

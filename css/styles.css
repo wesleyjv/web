@@ -21,45 +21,33 @@
 
     .hero-section {
         position: relative; /* Necessary for positioning background shapes */
-        height: 590px;
+        height: 700px;
         margin-bottom: 100px;
-        color: white; /* Text color */
+        color: black; /* Text color */
         background-color: #ffffff; /* Hero section background color */
         overflow: hidden; /* Hide overflow for SVG shapes */
-    }
-
-    
-    .hero-section a,
-    .hero-section p {
-        background-color: transparent; /* Ensure text elements are transparent */
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
-        position: relative; /* Ensure text is above SVG */
-        z-index: 1; /* Bring text above the SVG */
-        color: black;
+        align-items: center;
     }
 
 
-
-    .hero-section h1 {
-        background-color: transparent; /* Ensure text elements are transparent */
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .hero-section .hero-subtext {
+        margin-top: 30px;
         font-style: normal;
-        font-size: 15px;
-        position: relative; /* Ensure text is above SVG */
-        z-index: 1; /* Bring text above the SVG */
-        color: black;
+        font-size: 21.1292px;
+        text-align: center;
+        margin-bottom: 30px;
+        z-index: 1;
+        max-width: 900px; /* Limit text width */
     }
 
-    .hero-section p {
-        margin-top: 90px;
+    .hero-section .hero-headtext {
+        margin-top: 20px;
         font-weight: 400;
-        font-size: 72px; /* Font size for paragraph */
+        font-size: 93.3204px; /* Font size for paragraph */
     }
-
 
     /* Background SVG */
     .background-svg {
@@ -103,239 +91,215 @@
 
 
 
-    .hero-section-users {
+    /* Info Section - Wrapper */
+.info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
 
+}
+
+/* What We Offer Section */
+.what-we-offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 70vh;
+    background-color: #fcaf17;
+    border-radius: 15px;
+}
+
+
+.what-we-offer a {
+    font-weight: 800;
+    font-size: 64px;
+    color: #333;
+    display: block;
+    margin-bottom: 30px;
+    background-color: #fcaf17;
+}
+
+.dot {
+    color: black;
+    background-color: #fcaf17;
+}
+
+/* What We Offer Cards */
+.what-we-offer-box {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fcaf17;
+    
+}
+
+/* Offer Card Styling */
+.offer-card {
+    width: 320px;
+    height: auto; /* Adjust height for content */
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+}
+
+.offer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.offer-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.offer-card p {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.offer-card a {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.offer-card a:hover {
+    background-color: #333;
+    color: #fcaf17;
+}
+
+/* Reviews Section */
+.reviews-section {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+      
+}
+
+.reviews-section a {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    display: block;
+      
+}
+
+.reviews-section h4 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #999;
+    margin-bottom: 40px;
+     
+}
+
+/* Review Cards */
+.review_cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+      
+}
+
+#review_card {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#review_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.user-info {
+    margin-bottom: 15px;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.date {
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.review-text p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.star {
+    color: #FFD700;
+    margin-right: 3px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .what-we-offer-box {
+        flex-direction: column;
+        align-items: center;
     }
 
-
-    /* Reviews Section */
-    .reviews-section {
-        height: 500px;
+    .offer-card {
+        width: 90%;
     }
 
     .review_cards {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        height: auto;
-        width: auto;
-
-    }
-
-
-
-    .reviews-section a {
-        display: flex;
-        justify-content: center;
-        font-size: 56px;
-        font-weight: bold;
-
-        
-    }
-
-    .reviews-section h4 {
-        display: flex;
-        justify-content: center;
-        font-weight: normal;
-        color: #999;
-        font-size: 32px;
-
-    }
-
-    #review_card {
-        height: 250px;
-        width: 300px;
-        margin: 10px;
-        background-color: #ffffff;
-        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border-radius: 11px;
-    }
-
-    #review_card:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-    }
-
-    #review_card .user-info {
-        display: flex;
-        align-items: center;
         flex-direction: column;
     }
+}
 
-    #review_card .user-name {
-        font-weight: bold;
-        font-size: 16px;
-        margin-bottom: 5px;
-    }
-
-    #review_card .date {
-        color: #999;
-        font-size: 12px;
-        margin-bottom: 7px;
-    }
-
-    #review_card .review-text {
-        font-size: 14px;
-        line-height: 1.5;
-        color: #333;
-    }
-
-    #review_card .rating {
-        display: flex;
-        align-items: center;
-        margin-top: 5px;
-    }
-
-    #review_card .star {
-        color: #FFD700;
-        margin-right: 3px;
-    }
-
-    button {
-        margin: 10px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-
-    /* What We Offer Section  */
-
-
-    .what-we-offer {
-        text-align: center;
-        margin-bottom: 100px;
-    }
-
-    .what-we-offer a {
-        font-weight: 800;
-        font-size: 64px; 
-        color: #333; /* Change color to dark for better readability */
-        display: block;
-        margin-bottom: 40px; /* Add space below the title */
-    }
-
-    .dot {
-        color: #fcaf17; /* Dot color */
-    }
-
-    .what-we-offer-box {
-        width: 90%;
-        height: auto; /* Make height auto to adjust based on content */
-        background-color: #fcaf17;
-        display: flex;
-        justify-content: space-around; /* Space the cards evenly */
-        align-items: flex-start; /* Align cards to the top */
-        flex-wrap: wrap; /* Enable cards to wrap on smaller screens */
-        padding: 40px;
-        margin: 0 auto;
-        border-radius: 15px;
-    }
-
-    /* Styling for the offer cards */
-    .what-we-offer {
-        text-align: center;
-        margin-bottom: 100px;
-    }
-
-    .what-we-offer a {
-        font-weight: 800;
-        font-size: 64px;
-        color: #333;
-        display: block;
-        margin-bottom: 40px;
-    }
-
-    .dot {
-        color: #fcaf17;
-    }
-
-    .what-we-offer-box {
-        width: 90%;
-        background-color: #fcaf17;
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        padding: 40px;
-        margin: 0 auto;
-        border-radius: 15px;
-    }
-
-    /* Updated Glassy Effect for Larger Offer Cards */
-    .offer-card {
-        width: 320px;
-        height: 400px;
-        background: rgba(255, 255, 255, 0.25);
-        backdrop-filter: blur(10px);
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        display: flex; /* Flexbox to align items inside */
-        flex-direction: column;
-        justify-content: space-between; /* Makes the button stick to the bottom */
-        margin-bottom: 40px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .offer-card:hover {
-        transform: translateY(-10px); /* Lift effect */
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.12); /* Elevated shadow */
-    }
-
-    /* Title inside the offer cards */
-    .offer-card h3 {
-        font-size: 22px;
-        font-weight: 600;
-        color: #333; /* Darker text for contrast */
-        margin-bottom: 10px;
-    }
-
-    /* Description text inside the offer cards */
-    .offer-card p {
-        font-size: 1.2rem;
-        color: rgba(0, 0, 0, 0.85);
-        margin-bottom: 20px;
-        flex-grow: 1; /* Ensures the description grows while button stays at bottom */
-    }
-
-    /* Enhanced Learn More Button, now at the bottom */
-    .offer-card a {
-        display: inline-block;
-        padding: 14px 28px;
-        background-color: rgba(255, 255, 255, 0.9);
-        color: #333;
-        font-weight: bold;
-        font-size: 1rem;
-        text-decoration: none;
-        border-radius: 25px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .offer-card a:hover {
-        background-color: #333;
-        color: #fcaf17;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .what-we-offer-box {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .offer-card {
-            width: 90%;
-            height: auto;
-        }
-    }
 
 
 
@@ -529,7 +493,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    border: solid red 5px;
+
 }
 
 #search-bar {
