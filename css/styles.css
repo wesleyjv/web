@@ -1021,3 +1021,15 @@
     }
 
 
+    @media(max-width: 767px){
+        .footer{
+          width: 50%;
+          margin-bottom: 30px;
+      }
+      }
+      @media(max-width: 574px){
+        .footer{
+          width: 100%;
+      }
+      }
+
