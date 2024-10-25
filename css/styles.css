@@ -457,12 +457,13 @@
     .study_card {
         background-color: white;
         border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         margin: 15px 0;
         padding: 20px;
         width: 100%;
         max-width: 600px;
         transition: transform 0.2s;
+        
     }
 
     .study_card:hover {
@@ -814,7 +815,7 @@
         transform: scale(1.05);
     }
 
-    
+
 
     /* Summaries Page */
     #start-section {
@@ -854,7 +855,8 @@
 
 
     /* Cards Section */
-    .cards {
+      /* Cards Section */
+      .cards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         /* Responsive grid */
@@ -931,7 +933,7 @@
         /* Darker blue on hover */
     }
 
-    
+
 
     #searchInput {
         width: 80%;
@@ -943,9 +945,6 @@
         border: 1px solid #ccc;
         box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
     }
-
-
-
 
     /* Footer CSS */
     footer {
@@ -998,104 +997,3 @@
         transform: scale(1.05);
 
     }
-
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-    .hero-section {
-        flex-direction: column; /* Stack items vertically */
-        padding: 30px; /* Reduce padding */
-    }
-
-    .hero-headtext {
-        font-size: 60px; /* Smaller font size for mobile */
-    }
-
-    .hero-subtext {
-        font-size: 20px; /* Smaller font size */
-    }
-
-    .hero-section-btn-get_started {
-        font-size: 16px; /* Adjust button font size */
-    }
-
-    .hero-image {
-        width: 100%; /* Full width for images */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    .what-we-offer {
-        height: auto; /* Allow section to adjust height based on content */
-    }
-
-    .what-we-offer-box {
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center; /* Center align cards */
-    }
-
-    .offer-card {
-        width: 90%; /* Full width for cards on mobile */
-        margin: 10px 0; /* Reduce margin */
-    }
-
-    .reviews-section a {
-        font-size: 24px; /* Adjust font size */
-    }
-
-    #review_card {
-        width: 90%; /* Full width for review cards */
-    }
-
-    input[type="name"],
-    input[type="email"],
-    input[type="tel"],
-    textarea[id="request"] {
-        width: 90%; /* Full width for input fields */
-        padding: 8px; /* Reduce padding */
-    }
-
-    button[id="submit"] {
-        width: 80%; /* Make button wider */
-    }
-
-    .aboutus {
-        width: 100%; /* Full width */
-        margin: 0 20px; /* Margin for small screens */
-    }
-
-    .tutor-list {
-        grid-template-columns: 1fr; /* Stack tutor cards vertically */
-    }
-
-    .tutor-container {
-        width: 95%; /* Slightly reduce container width */
-    }
-}
-
-/* Further adjustments for smaller devices */
-@media (max-width: 480px) {
-    .hero-headtext {
-        font-size: 40px; /* Even smaller font size */
-    }
-
-    .hero-subtext {
-        font-size: 18px; /* Smaller font size */
-    }
-
-    .nav_links {
-        flex-direction: column; /* Stack navigation links vertically */
-    }
-
-    .nav_links li {
-        margin-bottom: 10px; /* Add margin between links */
-    }
-
-    .tutor-filter-button,
-    .tutor-book-now-btn {
-        font-size: 12px; /* Smaller buttons */
-    }
-
-    .logo {
-        font-size: 20px; /* Smaller logo font size */
-    }
-}
