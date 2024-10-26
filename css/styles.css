@@ -59,6 +59,7 @@ html {
 }
 
 .hero-image {
+    float: left;
     max-width: 1000px;
     height: auto;
     width: 600px;
@@ -171,6 +172,7 @@ td {
     width: 100%;
     margin: 0 auto;
     background-color: #fcaf17;
+    
 }
 
 .offer-card {
@@ -235,6 +237,7 @@ td {
     padding: 50px 0;
     text-align: center;
     margin-bottom: 70px;
+    
 }
 
 .reviews-section a {
@@ -748,6 +751,7 @@ header {
     background-color: #ffffff;
 }
 
+
 .nav_links li {
     background-color: #ffffff;
     font-size: 18px;
@@ -809,6 +813,11 @@ header {
 
 .nav_links li a:hover {
     color: #fcaf17;
+    transform: scale(1.05);
+}
+
+.nav_links li a:visited {
+    color: purple;
     transform: scale(1.05);
 }
 
