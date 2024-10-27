@@ -316,18 +316,9 @@ td {
     margin-right: 0.1875rem;
 }
 
-.contact-form {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin-bottom: 1.875rem;
-}
+
+
+/* Responsiveness */
 
 @media (max-width: 768px) {
     table {
@@ -480,6 +471,8 @@ td {
     }
 }
 
+/* Contact Page CSS */
+
 h1,
 h2 {
     text-align: center;
@@ -551,9 +544,24 @@ button[id="submit"]:hover {
     transform: scale(1.05);
 }
 
+.contact-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 1.875rem;
+}
+
 .kleur {
     color: red;
 }
+
+/* About us Page CSS */
 
 .aboutus {
     display: flex;
@@ -602,6 +610,8 @@ button[id="submit"]:hover {
     margin-bottom: 0.625rem;
     line-height: 1.5;
 }
+
+/* Study Guide Page CSS */
 
 .study_guide_hero-section {
     color: rgb(0, 0, 0);
@@ -652,6 +662,8 @@ button[id="submit"]:hover {
     word-spacing: 0.3125rem;
     line-height: 1.6;
 }
+
+/* Tutoring Page CSS */
 
 .tutor-hero-section {
     position: relative;
@@ -880,6 +892,8 @@ button[id="submit"]:hover {
     background-color: #16a163;
 }
 
+/* Responsiveness */
+
 @media (max-width: 768px) {
     .tutor-hero-section {
         height: 12rem;
@@ -1031,6 +1045,8 @@ button {
     text-decoration: none;
 }
 
+/* Header CSS */
+
 header {
     top: 0;
     left: 0;
@@ -1045,13 +1061,6 @@ header {
     height: 5rem;
 }
 
-#hamburger {
-    display: none;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
 
 .nav_links {
     list-style: none;
@@ -1170,6 +1179,8 @@ header {
     transform: scale(1.05);
 }
 
+/* Responsiveness */
+
 @media (max-width: 1024px) {
     header {
         flex-direction: column;
@@ -1221,6 +1232,8 @@ header {
         width: 40%;
     }
 }
+
+/* Summaries Section */
 
 #start-section {
     background-color: #f4f4f4;
@@ -1345,6 +1358,8 @@ header {
     display: block;
 }
 
+/* Responsiveness */
+
 @media (max-width: 1024px) {
     #start-section h1 {
         font-size: 4rem;
@@ -1410,6 +1425,8 @@ header {
         flex-direction: column;
     }
 }
+
+/* Footer CSS */
 
 footer {
     background-color: white;
