@@ -983,3 +983,65 @@ footer a:hover {
 
 
 
+
+#cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff; /* Dark background */
+    color: #000000; /* Text color */
+    padding: 20px; /* Increased padding for more space */
+    border-radius: 8px; /* More rounded corners */
+    display: flex;
+    flex-direction: column; /* Stack text and buttons */
+    align-items: center;
+    gap: 10px; /* Space between text and buttons */
+    max-width: 90%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 9999;
+    box-shadow: 0 4px 43px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#cookie-popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#cookie-popup p {
+    margin: 0;
+    text-align: center;
+    font-size: 1em; /* Increased font size for better readability */
+    line-height: 1.4; /* Improved line spacing */
+}
+
+#cookie-popup button {
+    background-color: #fcaf17; /* Updated button background color */
+    color: #2f2f2f; /* Text color for button */
+    border: none;
+    padding: 0.75em 1.5em; /* Increased button padding */
+    border-radius: 5px; /* Slightly larger border radius */
+    cursor: pointer;
+    font-size: 1em; /* Increased font size for button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin: 0 5px; /* Space between buttons */
+}
+
+#cookie-popup button:hover {
+    background-color: #e69c13; /* Darker shade for hover effect */
+}
+
+#decline-button {
+    background-color: #ff4f4f; /* Red color for decline button */
+    color: white; /* White text for contrast */
+}
+
+#decline-button:hover {
+    background-color: #e63939; /* Darker shade for hover effect */
+}
