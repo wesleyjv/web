@@ -12,25 +12,26 @@
     <link rel="icon" type="image/x-icon" href="img/logo.png">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
 
     <article>
         <span id="cookie-popup">
-            <p>This website uses cookies to ensure you get the best experience on our website.</p>
+            <a>This website uses cookies to ensure you get the best experience on our website.</a>
             <button id="accept-button" onclick="acceptCookies()">Accept</button>
             <button id="decline-button" onclick="declineCookies()">Decline</button>
         </span>
-        
-        
     </article>
 
 
 
     <header>
         <a href="index.html" class="logo" id="selected" aria-label="Homepage">StudySmart.</a>
-        <button id="hamburger" aria-label="Toggle navigation">&#9776;</button>
+        <button id="hamburger" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button> <!-- Font Awesome hamburger icon -->
         <nav>
             <ul class="nav_links" id="nav-links">
                 <li><a href="study_guide.html">Study Guide</a></li>
@@ -47,20 +48,23 @@
                 <li><a href="aboutus.html">About Us</a></li>
             </ul>
         </nav>
-        <a href="contact.html" class="contact"><button id="contact">Contact</button></a>
+        <a href="contact.html" id="contact" class="contact">Contact Us</a>
     </header>
+    
+    
     
 
     <section class="hero-section">
-        <div class="hero-text-container">
-            <p class="hero-headtext">Studying made easier</p>
+        <article class="hero-text-container">
+            <p class="hero-headtext"><strong>Studying made easier</strong></p>
             <p class="hero-subtext">Improve your <em>grades</em> and enhance your <em>studying</em> with our help. Hire
                 a tutor or get information on your favorite subject!</p>
-            <a href="#get-started"><button class="hero-section-btn-get_started">Get Started</button></a>
-        </div>
+            <a href="#get-started" class="hero-section-btn-get_started">Get Started</a>
+            
+        </article>
 
         <figure>
-            <img class="hero-image" src="img/hero-section.png" alt="studying" title="Hero Image">
+            <img class="hero-image" src="img/hero-section.png" alt="studying" title="Studying">
             <figcaption>Studying made easier.</figcaption>
         </figure>
 
@@ -69,7 +73,7 @@
     <section class="info-section">
         <article class="what-we-offer-background"></article>
         <section class="what-we-offer" id="get-started">
-            <a>What we offer.</a>
+            <a>what we offer.</a>
             <section class="what-we-offer-box">
                 <article class="offer-card">
                     <h3>Study Guides</h3>
@@ -130,7 +134,7 @@
         <a>What do our users say?</a>
         <h1>Check out these reviews!</h1>
         <section class="review_cards">
-            <article id="review_card">
+            <article class="review_card">
                 <section class="user-info">
                     <h2 class="user-name">John Doe</h2>
                     <time class="date" datetime="2023-09-28">September 28, 2023</time>
@@ -146,7 +150,7 @@
                     <span class="star">⭐</span>
                 </section>
             </article>
-            <article id="review_card">
+            <article class="review_card">
                 <section class="user-info">
                     <h2 class="user-name">Jane Smith</h2>
                     <time class="date" datetime="2023-09-28">August 25, 2023</time>
@@ -162,7 +166,7 @@
                     <span class="star">⭐</span>
                 </section>
             </article>
-            <article id="review_card">
+            <article class="review_card">
                 <section class="user-info">
                     <h2 class="user-name">Richard Roe</h2>
                     <time class="date" datetime="2023-09-28">December 14, 2023</time>
