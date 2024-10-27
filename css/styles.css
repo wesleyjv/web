@@ -14,6 +14,8 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Home Page */
+
 .hero-section {
     display: flex;
     justify-content: space-between;
@@ -328,43 +330,12 @@ td {
 
 @media (max-width: 768px) {
     table {
-        width: 100%;
-        border-collapse: collapse;
+        width: 90%;
     }
-
-    th,
-    td {
+    
+    th, td {
         padding: 0.5rem;
         font-size: 0.9rem;
-    }
-
-    tr {
-        display: block;
-        margin-bottom: 1rem;
-        border: #ddd solid 1px;
-        border-radius: 0.5rem;
-        overflow: hidden;
-    }
-
-    th {
-        display: none;
-    }
-
-    td {
-        display: flex;
-        justify-content: space-between;
-        border: none;
-        position: relative;
-        padding-left: 50%;
-        padding-right: 10px;
-    }
-
-    td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        font-weight: bold;
-        color: #333;
     }
 
     .hero-section {
@@ -426,10 +397,24 @@ td {
 
 @media (max-width: 480px) {
 
-    th,
-    td {
-        font-size: 0.8rem;
-        padding: 0.4rem;
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        border: none;
+    }
+    
+    th, td {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+        display: block;
+        text-align: left;
+    }
+
+    th {
+        background-color: #fcaf17;
+        font-weight: bold;
     }
 
     .hero-section {
