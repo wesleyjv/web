@@ -395,67 +395,67 @@ button[id="submit"]:hover {
     justify-content: flex-start;
     align-items: flex-start;
     width: 90%;
-    max-width: 900px;
+    max-width: 56.25rem; /* 900px / 16 */
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25rem; /* 20px / 16 */
     height: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* 4px 10px */
     background-color: #f9f9f9;
-    border-radius: 8px;
-    margin-bottom: 70px;
+    border-radius: 0.5rem; /* 8px / 16 */
+    margin-bottom: 4.375rem; /* 70px / 16 */
 }
 
 .aboutus h2 {
     font-weight: bold;
-    font-size: 32px;
-    margin: 50px 0 15px 0;
-    padding-left: 20px;
-    border-left: 5px solid #FFD700;
+    font-size: 2rem; /* 32px / 16 */
+    margin: 3.125rem 0 0.9375rem 0; /* 50px 15px */
+    padding-left: 1.25rem; /* 20px / 16 */
+    border-left: 0.3125rem solid #FFD700; /* 5px / 16 */
 }
 
 .aboutus p {
-    text-indent: 20px;
-    word-spacing: 5px;
-    line-height: 1.5; 
+    text-indent: 1.25rem; /* 20px / 16 */
+    word-spacing: 0.3125rem; /* 5px / 16 */
+    line-height: 1.5;
     font-weight: normal;
-    font-size: 16px;
-    margin: 0 0 15px 20px;
+    font-size: 1rem; /* 16px / 16 */
+    margin: 0 0 0.9375rem 1.25rem; /* 15px, 20px */
 }
 
 .aboutus ul,
 .aboutus ol {
-    margin-left: 20px;
-    margin-bottom: 15px;
-    padding-left: 20px;
+    margin-left: 1.25rem; /* 20px / 16 */
+    margin-bottom: 0.9375rem; /* 15px / 16 */
+    padding-left: 1.25rem; /* 20px / 16 */
 }
 
 .aboutus ul li,
 .aboutus ol li {
     font-weight: normal;
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 1rem; /* 16px / 16 */
+    margin-bottom: 0.625rem; /* 10px / 16 */
     line-height: 1.5;
 }
+
 
 
 
 .study_guide_hero-section {
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 30px 0;
+    padding: 1.875rem 0; /* 30px / 16 */
 }
 
 .study_guide_hero-section a {
-    font-size: 2.5em;
+    font-size: 2.5rem; /* 2.5em is kept the same as it scales well */
     font-weight: bold;
 }
 
 .study_guide_hero-section p {
-    text-indent: 20px;
-    word-spacing: 5px;
-    line-height: 1.5; 
-    font-size: 1.2em;
+    text-indent: 1.25rem; /* 20px / 16 */
+    word-spacing: 0.3125rem; /* 5px / 16 */
     line-height: 1.6;
+    font-size: 1.2em;
 }
 
 .study_guide_hero-section .dot {
@@ -466,17 +466,17 @@ button[id="submit"]:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 10%;
+    padding: 1.25rem 10%; /* 20px / 16 */
 }
 
 .study_card {
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgb(0, 0, 0, 0.1);
-    margin: 15px 0;
-    padding: 20px;
+    border-radius: 0.5rem; /* 8px / 16 */
+    box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.1); /* 6px 12px */
+    margin: 0.9375rem 0; /* 15px / 16 */
+    padding: 1.25rem; /* 20px / 16 */
     width: 100%;
-    max-width: 600px;
+    max-width: 37.5rem; /* 600px / 16 */
     transition: transform 0.2s;
 }
 
@@ -485,22 +485,22 @@ button[id="submit"]:hover {
 }
 
 .study_card p {
-    text-indent: 20px;
-    word-spacing: 5px;
-    line-height: 1.5; 
+    text-indent: 1.25rem; /* 20px / 16 */
+    word-spacing: 0.3125rem; /* 5px / 16 */
     line-height: 1.6;
 }
+
 
 .tutor-hero-section {
     position: relative;
     background-size: cover;
     background-position: center;
-    height: 250px;
+    height: 15.625rem; /* 250px / 16 */
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px / 16 */
 }
 
 .tutor-hero-overlay {
@@ -516,22 +516,22 @@ button[id="submit"]:hover {
 
 .tutor-hero-text {
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem; /* 20px / 16 */
 }
 
 .tutor-hero-text h1 {
-    letter-spacing: 2px;
-    font-size: 36px;
+    letter-spacing: 0.125rem; /* 2px / 16 */
+    font-size: 2.25rem; /* 36px / 16 */
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px / 16 */
     color: #000000;
 }
 
 .tutor-hero-text p {
-    text-indent: 20px;
-    word-spacing: 5px;
-    line-height: 1.5; 
-    font-size: 16px;
+    text-indent: 1.25rem; /* 20px / 16 */
+    word-spacing: 0.3125rem; /* 5px / 16 */
+    line-height: 1.5;
+    font-size: 1rem; /* 16px / 16 */
     color: #000000;
     font-weight: 400;
     margin: 0;
@@ -540,16 +540,16 @@ button[id="submit"]:hover {
 
 .tutor-filter-bar {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px / 16 */
 }
 
 .tutor-filter-button {
     background-color: #f3f3f3;
-    border: #691DBF solid 1px;
-    border-radius: 50px;
-    padding: 8px 20px;
-    margin: 5px;
-    font-size: 14px;
+    border: #691DBF solid 0.0625rem; /* 1px / 16 */
+    border-radius: 3.125rem; /* 50px / 16 */
+    padding: 0.5rem 1.25rem; /* 8px 20px */
+    margin: 0.3125rem; /* 5px / 16 */
+    font-size: 0.875rem; /* 14px / 16 */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -562,8 +562,8 @@ button[id="submit"]:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-    margin-bottom: 20px;
+    padding: 1.25rem 10%; /* 20px / 16 */
+    margin-bottom: 1.25rem; /* 20px / 16 */
 }
 
 .tutor-filters {
@@ -572,10 +572,10 @@ button[id="submit"]:hover {
 
 .tutor-filter-dropdown {
     background-color: #fff;
-    border: #ddd solid 1px;
-    padding: 10px 20px;
-    margin-right: 10px;
-    border-radius: 5px;
+    border: #ddd solid 0.0625rem; /* 1px / 16 */
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    margin-right: 0.625rem; /* 10px / 16 */
+    border-radius: 0.3125rem; /* 5px / 16 */
     cursor: pointer;
 }
 
@@ -585,80 +585,80 @@ button[id="submit"]:hover {
 }
 
 .tutor-sort-dropdown {
-    margin-left: 10px;
-    padding: 8px 12px;
-    border: #ddd solid 1px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+    margin-left: 0.625rem; /* 10px / 16 */
+    padding: 0.5rem 0.75rem; /* 8px 12px */
+    border: #ddd solid 0.0625rem; /* 1px / 16 */
+    border-radius: 0.3125rem; /* 5px / 16 */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* 2px 5px */
 }
 
 .tutor-container {
     width: 85%;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; /* 30px / 16 */
 }
 
 .tutor-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* 250px / 16 */
+    gap: 1.25rem; /* 20px / 16 */
 }
 
 .tutor-card {
     background-color: white;
-    border: #ddd solid 1px;
-    border-radius: 8px;
-    box-shadow: 0 12px 18px rgb(0, 0, 0, 0.05);
-    padding: 15px;
+    border: #ddd solid 0.0625rem; /* 1px / 16 */
+    border-radius: 0.5rem; /* 8px / 16 */
+    box-shadow: 0 0.75rem 1.125rem rgba(0, 0, 0, 0.05); /* 12px 18px */
+    padding: 0.9375rem; /* 15px / 16 */
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem; /* 5px / 16 */
 }
 
 .tutor-card:hover {
     transform: scale(1.02);
-    box-shadow: 0 6px 18px rgb(0, 0, 0, 0.1);
+    box-shadow: 0 0.375rem 1.125rem rgba(0, 0, 0, 0.1); /* 6px 18px */
 }
 
 .tutor-profile-picture {
     width: 100%;
-    height: 140px;
+    height: 8.75rem; /* 140px / 16 */
     object-fit: cover;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    margin-bottom: 0.9375rem; /* 15px / 16 */
+    border-radius: 0.3125rem; /* 5px / 16 */
 }
 
 .tutor-name {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px / 16 */
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem; /* 8px / 16 */
 }
 
 .tutor-description {
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px / 16 */
     color: #666;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px / 16 */
 }
 
 .tutor-rating {
-    font-size: 16px;
+    font-size: 1rem; /* 16px / 16 */
     color: #FFD700;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem; /* 8px / 16 */
 }
 
 .tutor-price {
-    font-size: 16px;
+    font-size: 1rem; /* 16px / 16 */
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px / 16 */
     color: #1dbf73;
 }
 
 .tutor-book-now-btn {
     background-color: #691DBF;
     color: white;
-    padding: 10px 15px;
+    padding: 0.625rem 0.9375rem; /* 10px 15px */
     border: none;
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: 0.3125rem; /* 5px / 16 */
+    font-size: 0.875rem; /* 14px / 16 */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -667,12 +667,13 @@ button[id="submit"]:hover {
     background-color: #16a163;
 }
 
+
 li,
 a,
 button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px / 16 */
     color: #000000;
     text-decoration: none;
 }
@@ -681,14 +682,14 @@ header {
     top: 0;
     left: 0;
     width: auto;
-    padding: 30px 10%;
+    padding: 1.875rem 10%; /* 30px / 16 */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 0.125rem solid #ccc; /* 2px / 16 */
     position: sticky;
-    height: 80px;
+    height: 5rem; /* 80px / 16 */
 }
 
 .nav_links {
@@ -696,14 +697,13 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 15px;
+    gap: 0.9375rem; /* 15px / 16 */
     background-color: #ffffff;
 }
 
-
 .nav_links li {
     background-color: #ffffff;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px / 16 */
     position: relative;
     color: rgb(0, 0, 0);
 }
@@ -712,9 +712,9 @@ header {
     background-color: #ffffff;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding: 8px;
+    padding: 0.5rem; /* 8px / 16 */
     display: block;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px / 16 */
 }
 
 .dropdown {
@@ -727,19 +727,19 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
-    border: #ccc solid 1px;
-    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    border: #ccc solid 0.0625rem; /* 1px / 16 */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px 8px */
     z-index: 1000;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateY(-10px);
+    transform: translateY(-0.625rem); /* 10px / 16 */
 }
 
 .dropdown li {
-    width: 140px;
+    width: 8.75rem; /* 140px / 16 */
 }
 
 .dropdown a {
-    padding: 8px;
+    padding: 0.5rem; /* 8px / 16 */
     color: #333;
     background-color: rgb(255, 255, 255);
     text-decoration: none;
@@ -757,7 +757,7 @@ header {
 }
 
 .nav_links li a {
-    transition: all 0.3s 0s ease;
+    transition: all 0.3s ease;
 }
 
 .nav_links li a:visited:hover {
@@ -776,45 +776,46 @@ header {
 
 button[id="contact"] {
     font-family: "Montserrat", sans-serif;
-    padding: 10px 24px;
+    padding: 0.625rem 1.5rem; /* 10px 24px */
     background-color: #fcaf17;
     border: none;
-    border-radius: 40px;
+    border-radius: 2.5rem; /* 40px / 16 */
     cursor: pointer;
-    transition: all 0.3s 0s ease;
-    margin-right: 15px;
-    box-shadow: 2px 5px 6px rgb(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    margin-right: 0.9375rem; /* 15px / 16 */
+    box-shadow: 0.125rem 0.3125rem 0.375rem rgba(0, 0, 0, 0.3); /* 2px 5px 6px */
 }
 
 button[id="contact"]:hover {
     background-color: #fcaf17;
-    transition: all 0.3s 0s ease;
+    transition: all 0.3s ease;
     transform: scale(1.05);
 }
 
 .logo {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px / 16 */
     color: rgb(0, 0, 0);
     text-decoration: none;
-    transition: all 0.3s 0s ease;
-    margin-left: 20px;
+    transition: all 0.3s ease;
+    margin-left: 1.25rem; /* 20px / 16 */
     background-color: #ffffff;
 }
 
 .logo:hover {
     color: #fcaf17;
-    transition: all 0.3s 0s ease;
+    transition: all 0.3s ease;
     transform: scale(1.05);
 }
+
 
 #start-section {
     background-color: #f4f4f4;
     text-align: center;
-    margin-bottom: 50px;
-    margin-top: 100px;
-    border-radius: 10px;
+    margin-bottom: 3.125rem; /* 50px / 16 */
+    margin-top: 6.25rem; /* 100px / 16 */
+    border-radius: 0.625rem; /* 10px / 16 */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -822,64 +823,64 @@ button[id="contact"]:hover {
 }
 
 #start-section h1 {
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem; /* 2px / 16 */
     font-weight: 400;
-    font-size: 93.3204px;
+    font-size: 5.8325rem; /* 93.3204px / 16 */
 }
 
 #start-section p {
-    text-indent: 20px;
-    word-spacing: 5px;
-    line-height: 1.5; 
-    margin-top: 30px;
+    text-indent: 1.25rem; /* 20px / 16 */
+    word-spacing: 0.3125rem; /* 5px / 16 */
+    line-height: 1.5;
+    margin-top: 1.875rem; /* 30px / 16 */
     font-style: normal;
-    font-size: 21.1292px;
+    font-size: 1.32rem; /* 21.1292px / 16 */
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; /* 30px / 16 */
     z-index: 1;
-    max-width: 900px;
+    max-width: 56.25rem; /* 900px / 16 */
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr)); /* 300px / 16 */
+    gap: 1.25rem; /* 20px / 16 */
+    padding: 1.25rem; /* 20px / 16 */
     justify-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem; /* 40px / 16 */
 }
 
 .card {
     background-color: #f9f9f9;
-    border: #ddd solid 1px;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+    border: #ddd solid 0.0625rem; /* 1px / 16 */
+    border-radius: 0.5rem; /* 8px / 16 */
+    padding: 0.9375rem; /* 15px / 16 */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* 2px 5px */
     transition: transform 0.2s;
     width: 100%;
-    max-width: 300px;
-    height: 300px;
+    max-width: 18.75rem; /* 300px / 16 */
+    height: 18.75rem; /* 300px / 16 */
     display: flex;
     flex-direction: column;
 }
 
 .card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-0.1875rem); /* 3px / 16 */
 }
 
 .card-title {
     font-size: 1.2em;
     font-weight: 600;
-    margin: 15px 0;
+    margin: 0.9375rem 0; /* 15px / 16 */
     color: #333;
 }
 
 .card p {
-    text-indent: 20px;
-    word-spacing: 5px;
-    line-height: 1.5; 
+    text-indent: 1.25rem; /* 20px / 16 */
+    word-spacing: 0.3125rem; /* 5px / 16 */
+    line-height: 1.5;
     font-size: 0.95em;
-    margin: 10px 0;
+    margin: 0.625rem 0; /* 10px / 16 */
     color: #555;
     flex-grow: 1;
 }
@@ -888,26 +889,26 @@ button[id="contact"]:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px 0;
+    padding: 0.9375rem 0; /* 15px / 16 */
 }
 
 .separation-line {
     width: 100%;
-    height: 1px;
+    height: 0.0625rem; /* 1px / 16 */
     background-color: #ddd;
-    margin: 10px 0;
+    margin: 0.625rem 0; /* 10px / 16 */
 }
 
 .download-btn {
     background-color: #007bff;
     color: #ffffff;
     border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
+    border-radius: 0.3125rem; /* 5px / 16 */
+    padding: 0.625rem 0.9375rem; /* 10px 15px */
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 1em;
-    margin-top: 10px;
+    margin-top: 0.625rem; /* 10px / 16 */
 }
 
 .download-btn:hover {
@@ -915,25 +916,26 @@ button[id="contact"]:hover {
 }
 
 #searchInput {
-    line-height: 1.5; 
+    line-height: 1.5;
     width: 80%;
-    max-width: 500px;
-    padding: 10px;
-    margin: 20px auto;
+    max-width: 31.25rem; /* 500px / 16 */
+    padding: 0.625rem; /* 10px / 16 */
+    margin: 1.25rem auto; /* 20px / 16 */
     font-size: 1em;
-    border-radius: 5px;
-    border: #ccc solid 1px;
-    box-shadow: 0 1px 3px rgb(0, 0, 0, 0.1) inset;
+    border-radius: 0.3125rem; /* 5px / 16 */
+    border: #ccc solid 0.0625rem; /* 1px / 16 */
+    box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1) inset; /* 1px 3px */
     display: block;
 }
+
 
 footer {
     background-color: white;
     color: #333;
-    padding: 20px;
+    padding: 1.25rem; /* 20px / 16 */
     text-align: center;
     border: none;
-    border-top: 2px solid #ccc;
+    border-top: 0.125rem solid #ccc; /* 2px / 16 */
     width: 100%;
     height: 20vh;
 }
@@ -948,21 +950,21 @@ footer nav ul {
 
 footer nav ul > li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 0.9375rem; /* 15px / 16 */
     border: none;
 }
 
 footer address {
-    margin: 20px 0;
+    margin: 1.25rem 0; /* 20px / 16 */
     color: #333;
     border: none;
 }
 
 footer p {
-    text-indent: 20px;
-    word-spacing: 5px;
-    line-height: 1.5; 
-    margin-top: 20px;
+    text-indent: 1.25rem; /* 20px / 16 */
+    word-spacing: 0.3125rem; /* 5px / 16 */
+    line-height: 1.5;
+    margin-top: 1.25rem; /* 20px / 16 */
     font-size: 0.9em;
     color: #333;
     border: none;
@@ -978,5 +980,6 @@ footer a:hover {
     color: #fcaf17;
     transform: scale(1.05);
 }
+
 
 
