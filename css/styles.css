@@ -333,8 +333,9 @@ td {
     table {
         width: 90%;
     }
-    
-    th, td {
+
+    th,
+    td {
         padding: 0.5rem;
         font-size: 0.9rem;
     }
@@ -406,8 +407,9 @@ td {
         white-space: nowrap;
         border: none;
     }
-    
-    th, td {
+
+    th,
+    td {
         padding: 0.5rem;
         font-size: 0.875rem;
         display: block;
@@ -593,8 +595,8 @@ button[id="submit"]:hover {
     padding-left: 1.25rem;
 }
 
-.aboutus ul > li,
-.aboutus ol > li {
+.aboutus ul>li,
+.aboutus ol>li {
     font-weight: normal;
     font-size: 1rem;
     margin-bottom: 0.625rem;
@@ -1115,16 +1117,16 @@ header {
     transform: translateY(0);
 }
 
-.nav_links li > a {
+.nav_links li>a {
     transition: all 0.3s ease;
 }
 
-.nav_links li > a:visited:hover {
+.nav_links li>a:visited:hover {
     color: #fcaf17;
     transform: scale(1.05);
 }
 
-.nav_links li > a:visited {
+.nav_links li>a:visited {
     color: black;
     transform: scale(1.05);
 }
