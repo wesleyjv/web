@@ -329,7 +329,7 @@ td {
 @media (max-width: 768px) {
     table {
         width: 100%;
-        border-collapse: collapse; /* Ensure borders are collapsed for better appearance */
+        border-collapse: collapse;
     }
 
     th,
@@ -341,13 +341,13 @@ td {
     tr {
         display: block;
         margin-bottom: 1rem;
-        border: 1px solid #ddd; /* Add a border to separate rows */
-        border-radius: 0.5rem; /* Rounded corners for a smoother look */
-        overflow: hidden; /* Prevents overflow from inner content */
+        border: #ddd solid 1px;
+        border-radius: 0.5rem;
+        overflow: hidden;
     }
 
     th {
-        display: none; /* Hide headers on small screens */
+        display: none;
     }
 
     td {
@@ -356,7 +356,7 @@ td {
         border: none;
         position: relative;
         padding-left: 50%;
-        padding-right: 10px; /* Added padding for right side */
+        padding-right: 10px;
     }
 
     td:before {
@@ -370,21 +370,21 @@ td {
     .hero-section {
         flex-direction: column;
         align-items: center;
-        padding: 2rem 1rem; /* Added horizontal padding for better alignment */
+        padding: 2rem 1rem;
     }
 
     .hero-headtext {
-        font-size: 4rem; /* Consider decreasing for smaller devices */
-        text-align: center; /* Center align for better readability */
+        font-size: 4rem;
+        text-align: center;
     }
 
     .hero-subtext {
-        font-size: 1.5rem; /* Slight reduction for readability */
-        text-align: center; /* Center align for better readability */
+        font-size: 1.5rem;
+        text-align: center;
     }
 
     .hero-image {
-        display: none; /* Consider hiding on smaller screens */
+        display: none;
         margin-top: 2rem;
         width: 80%;
         max-width: 100%;
@@ -396,26 +396,36 @@ td {
 
     .offer-card {
         width: 90%;
-        margin: 0.5rem 0; /* Added margin for spacing between cards */
-        padding: 1rem; /* Added padding for a better appearance */
-        border-radius: 0.5rem; /* Rounded corners */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+        margin: 0.5rem 0;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
     }
 
     .reviews-section a {
         font-size: 2rem;
-        text-align: center; /* Center align links for uniformity */
-        display: block; /* Ensure each link takes full width */
-        margin: 0.5rem 0; /* Added vertical margin */
+        text-align: center;
+        display: block;
+        margin: 0.5rem 0;
     }
 
     .reviews-section h1 {
         font-size: 1.5rem;
-        text-align: center; /* Center align headings */
+        text-align: center;
+    }
+
+    figcaption {
+        display: none;
+    }
+
+    .hero-section-btn-get_started {
+        display: flex;
+        justify-content: center;
     }
 }
 
 @media (max-width: 480px) {
+
     th,
     td {
         font-size: 0.8rem;
@@ -423,35 +433,35 @@ td {
     }
 
     .hero-section {
-        padding: 1.5rem 0.5rem; /* Reduced padding for small devices */
+        padding: 1.5rem 0.5rem;
     }
 
     .hero-headtext {
-        font-size: 3rem; /* Consider smaller sizes for better fit */
+        font-size: 3rem;
     }
 
     .hero-subtext {
-        font-size: 1.25rem; /* Adjusted font size */
+        font-size: 1.25rem;
     }
 
     .hero-image {
         width: 100%;
         max-width: none;
-        display: block; /* Show image on smaller screens */
-        margin-top: 1rem; /* Reduced margin */
+        display: none;
+        margin-top: 1rem;
     }
 
     .what-we-offer {
         height: auto;
-        padding: 1rem 0; /* Reduced padding for compactness */
+        padding: 1rem 0;
     }
 
     .offer-card {
         width: 90%;
-        margin: 0.5rem auto; /* Centered margin */
-        padding: 1rem; /* Consistent padding */
-        border-radius: 0.5rem; /* Rounded corners */
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        margin: 0.5rem auto;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 1px 2px rgb(0, 0, 0, 0.1);
     }
 
     .reviews-section a {
@@ -464,13 +474,21 @@ td {
 
     #review_card {
         width: 90%;
-        margin: 0 auto; /* Centered margin */
-        padding: 1rem; /* Added padding for better appearance */
-        border-radius: 0.5rem; /* Rounded corners */
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        margin: 0 auto;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 1px 2px rgb(0, 0, 0, 0.1);
+    }
+
+    figcaption {
+        display: none;
+    }
+
+    .hero-section-btn-get_started {
+        display: flex;
+        justify-content: center;
     }
 }
-
 
 h1,
 h2 {
@@ -872,195 +890,146 @@ button[id="submit"]:hover {
     background-color: #16a163;
 }
 
-
 @media (max-width: 768px) {
-    table {
-        width: 100%;
-        border-collapse: collapse; /* Ensure borders are collapsed for better appearance */
+    .tutor-hero-section {
+        height: 12rem;
+        padding: 1rem;
     }
 
-    th,
-    td {
-        padding: 0.5rem;
+    .tutor-hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .tutor-hero-section p {
         font-size: 0.9rem;
     }
 
-    tr {
-        display: block;
-        margin-bottom: 1rem;
-        border: 1px solid #ddd; /* Add a border to separate rows */
-        border-radius: 0.5rem; /* Rounded corners for a smoother look */
-        overflow: hidden; /* Prevents overflow from inner content */
-    }
-
-    th {
-        display: none; /* Hide headers on small screens */
-    }
-
-    td {
+    .tutor-filter-bar {
         display: flex;
-        justify-content: space-between;
-        border: none;
-        position: relative;
-        padding-left: 50%;
-        padding-right: 10px; /* Added padding for right side */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
     }
 
-    td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        font-weight: bold;
-        color: #333;
-    }
-
-    .hero-section {
+    .tutor-filters-sorting {
         flex-direction: column;
-        align-items: center;
-        padding: 2rem 1rem; /* Added horizontal padding for better alignment */
+        padding: 1rem 5%;
     }
 
-    .hero-headtext {
-        font-size: 4rem; /* Consider decreasing for smaller devices */
-        text-align: center; /* Center align for better readability */
+    .tutor-side-info {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
     }
 
-    .hero-subtext {
-        font-size: 1.5rem; /* Slight reduction for readability */
-        text-align: center; /* Center align for better readability */
+    .tutor-sidebar-testimonials,
+    .tutor-sidebar-info {
+        width: 100%;
+        padding: 0.8rem;
     }
 
-    .hero-image {
-        display: none; /* Consider hiding on smaller screens */
-        margin-top: 2rem;
-        width: 80%;
-        max-width: 100%;
+    .tutor-list {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .what-we-offer {
-        height: auto;
+    .tutor-card {
+        padding: 0.8rem;
     }
 
-    .offer-card {
-        width: 90%;
-        margin: 0.5rem 0; /* Added margin for spacing between cards */
-        padding: 1rem; /* Added padding for a better appearance */
-        border-radius: 0.5rem; /* Rounded corners */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    .tutor-profile-picture {
+        height: 6.25rem;
     }
 
-    .reviews-section a {
-        font-size: 2rem;
-        text-align: center; /* Center align links for uniformity */
-        display: block; /* Ensure each link takes full width */
-        margin: 0.5rem 0; /* Added vertical margin */
+    .tutor-name {
+        font-size: 1rem;
     }
 
-    .reviews-section h1 {
-        font-size: 1.5rem;
-        text-align: center; /* Center align headings */
-    }
-
-    /* Remove figcaption on smaller screens */
-    figcaption {
-        display: none; /* Hide figcaption for screens smaller than 768px */
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-headtext {
-        font-size: 5vw; /* Fluid typography */
-        text-align: center;
-    }
-
-    .hero-subtext {
-        font-size: 3.5vw; /* Fluid typography */
-        text-align: center;
-    }
-
-    .what-we-offer {
-        padding: 2rem 1rem; /* Responsive padding */
-    }
-
-    .offer-card {
-        width: 100%; /* Full width on smaller screens */
-        margin-bottom: 1rem; /* Increased margin for spacing */
-        padding: 1rem; /* Consistent padding */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .reviews-section {
-        padding: 1rem 0; /* Responsive padding */
-    }
-
-    .review_card {
-        padding: 1rem; /* Added padding for better layout */
-        border-radius: 0.5rem; /* Rounded corners */
+    .tutor-description,
+    .tutor-price {
+        font-size: 0.8rem;
     }
 }
 
 @media (max-width: 480px) {
-    .hero-headtext {
-        font-size: 6vw; /* Even more responsive */
+    .tutor-hero-section {
+        height: 10rem;
+        padding: 0.8rem;
     }
 
-    .hero-subtext {
-        font-size: 4vw; /* Responsive size */
+    .tutor-hero-section h1 {
+        font-size: 1.75rem;
     }
 
-    /* Hide figcaption on smaller screens */
-    figcaption {
-        display: none; /* Hide figcaption */
+    .tutor-hero-section p {
+        font-size: 0.8rem;
     }
 
-    .reviews-section h1 {
-        font-size: 1.5rem; /* Adjusted for smaller screens */
+    .tutor-filter-bar {
+        flex-direction: column;
     }
 
-    .reviews-section a {
-        font-size: 1.5rem; /* Adjusted link size */
-        margin: 0.5rem 0; /* Added margin for spacing */
+    .tutor-filter-button {
+        width: 90%;
+        padding: 0.4rem;
+        margin: 0.2rem auto;
+        font-size: 0.8rem;
     }
 
-    /* Table responsive adjustments */
-    table {
+    .tutor-filters-sorting {
+        flex-direction: column;
+        padding: 1rem 3%;
+    }
+
+    .tutor-filters {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .tutor-filter-dropdown {
         width: 100%;
-        border-collapse: collapse; /* Better styling */
-    }
-
-    th,
-    td {
-        font-size: 0.8rem; /* Adjusted for smaller screens */
         padding: 0.5rem;
     }
 
-    tr {
-        display: block;
-        margin-bottom: 1rem; /* Increased space between rows */
+    .tutor-list {
+        grid-template-columns: 1fr;
     }
 
-    th {
-        display: none; /* Hide headers */
+    .tutor-card {
+        padding: 0.7rem;
     }
 
-    td {
-        display: flex;
-        justify-content: space-between;
-        border: none;
-        position: relative;
-        padding-left: 50%; /* Adjust padding for responsiveness */
-        padding-right: 10px; /* Consistent padding */
+    .tutor-profile-picture {
+        height: 5rem;
     }
 
-    td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        font-weight: bold;
-        color: #333;
+    .tutor-name {
+        font-size: 1rem;
+    }
+
+    .tutor-description,
+    .tutor-price,
+    .tutor-rating {
+        font-size: 0.75rem;
+    }
+
+    .tutor-book-now-btn {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    footer {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
     }
 }
-
 
 li,
 a,
