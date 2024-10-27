@@ -14,8 +14,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Home Page */
-
 .hero-section {
     display: flex;
     justify-content: space-between;
@@ -137,7 +135,6 @@ td {
     height: 70vh;
     background-color: #fcaf17;
     border-radius: 0.9375rem;
-    
 }
 
 .what-we-offer a {
@@ -170,7 +167,6 @@ td {
     border-radius: 0.8rem;
     border-color: #d89716;
     border-width: 0.2rem;
-
 }
 
 .offer-card {
@@ -188,7 +184,7 @@ td {
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: white;
-    border-style: dashed
+    border-style: dashed;
 }
 
 .offer-card:hover {
@@ -333,6 +329,7 @@ td {
 @media (max-width: 768px) {
     table {
         width: 100%;
+        border-collapse: collapse; /* Ensure borders are collapsed for better appearance */
     }
 
     th,
@@ -344,10 +341,13 @@ td {
     tr {
         display: block;
         margin-bottom: 1rem;
+        border: 1px solid #ddd; /* Add a border to separate rows */
+        border-radius: 0.5rem; /* Rounded corners for a smoother look */
+        overflow: hidden; /* Prevents overflow from inner content */
     }
 
     th {
-        display: none;
+        display: none; /* Hide headers on small screens */
     }
 
     td {
@@ -356,6 +356,7 @@ td {
         border: none;
         position: relative;
         padding-left: 50%;
+        padding-right: 10px; /* Added padding for right side */
     }
 
     td:before {
@@ -369,18 +370,21 @@ td {
     .hero-section {
         flex-direction: column;
         align-items: center;
-        padding: 2rem;
+        padding: 2rem 1rem; /* Added horizontal padding for better alignment */
     }
 
     .hero-headtext {
-        font-size: 4rem;
+        font-size: 4rem; /* Consider decreasing for smaller devices */
+        text-align: center; /* Center align for better readability */
     }
 
     .hero-subtext {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Slight reduction for readability */
+        text-align: center; /* Center align for better readability */
     }
 
     .hero-image {
+        display: none; /* Consider hiding on smaller screens */
         margin-top: 2rem;
         width: 80%;
         max-width: 100%;
@@ -392,19 +396,26 @@ td {
 
     .offer-card {
         width: 90%;
+        margin: 0.5rem 0; /* Added margin for spacing between cards */
+        padding: 1rem; /* Added padding for a better appearance */
+        border-radius: 0.5rem; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
     }
 
     .reviews-section a {
         font-size: 2rem;
+        text-align: center; /* Center align links for uniformity */
+        display: block; /* Ensure each link takes full width */
+        margin: 0.5rem 0; /* Added vertical margin */
     }
 
     .reviews-section h1 {
         font-size: 1.5rem;
+        text-align: center; /* Center align headings */
     }
 }
 
 @media (max-width: 480px) {
-
     th,
     td {
         font-size: 0.8rem;
@@ -412,30 +423,35 @@ td {
     }
 
     .hero-section {
-        padding: 1.5rem;
+        padding: 1.5rem 0.5rem; /* Reduced padding for small devices */
     }
 
     .hero-headtext {
-        font-size: 3rem;
+        font-size: 3rem; /* Consider smaller sizes for better fit */
     }
 
     .hero-subtext {
-        font-size: 1.25rem;
+        font-size: 1.25rem; /* Adjusted font size */
     }
 
     .hero-image {
         width: 100%;
         max-width: none;
+        display: block; /* Show image on smaller screens */
+        margin-top: 1rem; /* Reduced margin */
     }
 
     .what-we-offer {
         height: auto;
-        padding: 2rem 0;
+        padding: 1rem 0; /* Reduced padding for compactness */
     }
 
     .offer-card {
         width: 90%;
-        margin: 0.5rem 0;
+        margin: 0.5rem auto; /* Centered margin */
+        padding: 1rem; /* Consistent padding */
+        border-radius: 0.5rem; /* Rounded corners */
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     }
 
     .reviews-section a {
@@ -448,8 +464,13 @@ td {
 
     #review_card {
         width: 90%;
+        margin: 0 auto; /* Centered margin */
+        padding: 1rem; /* Added padding for better appearance */
+        border-radius: 0.5rem; /* Rounded corners */
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     }
 }
+
 
 h1,
 h2 {
@@ -467,8 +488,6 @@ h2 {
     text-decoration: dashed;
     margin: 1.875rem;
 }
-
-
 
 fieldset {
     border-width: 0;
@@ -854,6 +873,194 @@ button[id="submit"]:hover {
 }
 
 
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        border-collapse: collapse; /* Ensure borders are collapsed for better appearance */
+    }
+
+    th,
+    td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd; /* Add a border to separate rows */
+        border-radius: 0.5rem; /* Rounded corners for a smoother look */
+        overflow: hidden; /* Prevents overflow from inner content */
+    }
+
+    th {
+        display: none; /* Hide headers on small screens */
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        padding-right: 10px; /* Added padding for right side */
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem; /* Added horizontal padding for better alignment */
+    }
+
+    .hero-headtext {
+        font-size: 4rem; /* Consider decreasing for smaller devices */
+        text-align: center; /* Center align for better readability */
+    }
+
+    .hero-subtext {
+        font-size: 1.5rem; /* Slight reduction for readability */
+        text-align: center; /* Center align for better readability */
+    }
+
+    .hero-image {
+        display: none; /* Consider hiding on smaller screens */
+        margin-top: 2rem;
+        width: 80%;
+        max-width: 100%;
+    }
+
+    .what-we-offer {
+        height: auto;
+    }
+
+    .offer-card {
+        width: 90%;
+        margin: 0.5rem 0; /* Added margin for spacing between cards */
+        padding: 1rem; /* Added padding for a better appearance */
+        border-radius: 0.5rem; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    }
+
+    .reviews-section a {
+        font-size: 2rem;
+        text-align: center; /* Center align links for uniformity */
+        display: block; /* Ensure each link takes full width */
+        margin: 0.5rem 0; /* Added vertical margin */
+    }
+
+    .reviews-section h1 {
+        font-size: 1.5rem;
+        text-align: center; /* Center align headings */
+    }
+
+    /* Remove figcaption on smaller screens */
+    figcaption {
+        display: none; /* Hide figcaption for screens smaller than 768px */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-headtext {
+        font-size: 5vw; /* Fluid typography */
+        text-align: center;
+    }
+
+    .hero-subtext {
+        font-size: 3.5vw; /* Fluid typography */
+        text-align: center;
+    }
+
+    .what-we-offer {
+        padding: 2rem 1rem; /* Responsive padding */
+    }
+
+    .offer-card {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 1rem; /* Increased margin for spacing */
+        padding: 1rem; /* Consistent padding */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .reviews-section {
+        padding: 1rem 0; /* Responsive padding */
+    }
+
+    .review_card {
+        padding: 1rem; /* Added padding for better layout */
+        border-radius: 0.5rem; /* Rounded corners */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-headtext {
+        font-size: 6vw; /* Even more responsive */
+    }
+
+    .hero-subtext {
+        font-size: 4vw; /* Responsive size */
+    }
+
+    /* Hide figcaption on smaller screens */
+    figcaption {
+        display: none; /* Hide figcaption */
+    }
+
+    .reviews-section h1 {
+        font-size: 1.5rem; /* Adjusted for smaller screens */
+    }
+
+    .reviews-section a {
+        font-size: 1.5rem; /* Adjusted link size */
+        margin: 0.5rem 0; /* Added margin for spacing */
+    }
+
+    /* Table responsive adjustments */
+    table {
+        width: 100%;
+        border-collapse: collapse; /* Better styling */
+    }
+
+    th,
+    td {
+        font-size: 0.8rem; /* Adjusted for smaller screens */
+        padding: 0.5rem;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 1rem; /* Increased space between rows */
+    }
+
+    th {
+        display: none; /* Hide headers */
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        position: relative;
+        padding-left: 50%; /* Adjust padding for responsiveness */
+        padding-right: 10px; /* Consistent padding */
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+}
+
 
 li,
 a,
@@ -1003,52 +1210,56 @@ header {
     transition: all 0.3s ease;
     transform: scale(1.05);
 }
-/* Tablet and Mobile Devices */
+
 @media (max-width: 1024px) {
     header {
-        flex-direction: column; /* Stack header items vertically */
-        padding: 1rem 5%; /* Reduce padding for smaller screens */
-        height: auto; /* Allow height to adjust based on content */
-        position:relative;
+        flex-direction: column;
+        padding: 1rem 5%;
+        height: auto;
+        position: relative;
     }
 
     .nav_links {
-        flex-direction: column; /* Stack navigation links vertically */
-        width: 100%; /* Full width for nav links */
-        padding: 0; /* Remove padding */
-        gap: 0; /* Remove gap for a more compact layout */
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        gap: 0;
     }
 
     .nav_links li {
-        width: 100%; /* Full width for each link */
-        text-align: center; /* Center align text */
+        width: 100%;
+        text-align: center;
     }
 
     .nav_links a {
-        padding: 0.75rem 0; /* Adjust padding for better touch targets */
-        font-size: 1rem; /* Adjust font size */
+        padding: 0.75rem 0;
+        font-size: 1rem;
     }
 
     .contact {
-        width: 100%; /* Full width for contact button */
-        margin-top: 1rem; /* Margin for spacing */
+        width: 40%;
+        margin-top: 1rem;
+        text-align: center;
+        font-weight: 600;
     }
 
     .logo {
-        margin: 0; /* Remove margin for logo */
-        text-align: center; /* Center the logo */
-        font-size: 1.25rem; /* Adjust logo size */
+        margin: 0;
+        text-align: center;
+        font-size: 1.25rem;
     }
 }
 
-/* Mobile Devices (max-width: 767px) */
 @media (max-width: 767px) {
     .nav_links li a {
-        font-size: 0.9rem; /* Further adjust font size for mobile */
+        font-size: 0.9rem;
     }
 
     .contact {
-        padding: 0.5rem; /* Adjust padding for the contact button */
+        padding: 0.5rem;
+        text-align: center;
+        font-weight: 600;
+        width: 40%;
     }
 }
 
@@ -1157,6 +1368,11 @@ header {
     background-color: #0056b3;
 }
 
+.summaries-filter-bar {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
 #searchInput {
     line-height: 1.5;
     width: 80%;
@@ -1168,6 +1384,72 @@ header {
     border: #ccc solid 0.0625rem;
     box-shadow: 0 0.0625rem 0.1875rem rgb(0, 0, 0, 0.1) inset;
     display: block;
+}
+
+@media (max-width: 1024px) {
+    #start-section h1 {
+        font-size: 4rem;
+    }
+
+    #start-section p {
+        font-size: 1.2rem;
+        max-width: 80%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    }
+
+    .card {
+        height: auto;
+    }
+
+    #searchInput {
+        width: 90%;
+    }
+
+    .summaries-filter-bar {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+    #start-section {
+        margin-top: 3rem;
+    }
+
+    #start-section h1 {
+        font-size: 2.5rem;
+    }
+
+    #start-section p {
+        font-size: 1rem;
+        margin-top: 1rem;
+        max-width: 90%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    }
+
+    .card {
+        height: auto;
+    }
+
+    .download-btn {
+        font-size: 0.9em;
+        padding: 0.5rem 0.75rem;
+    }
+
+    #searchInput {
+        width: 95%;
+    }
+
+    .summaries-filter-bar {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 footer {
@@ -1224,44 +1506,43 @@ footer a:hover {
 
 @media (max-width: 1024px) {
     footer {
-        height: auto; /* Allow the footer to adjust height based on content */
-        padding: 1rem; /* Reduce padding for smaller screens */
+        height: auto;
+        padding: 1rem;
     }
 
     footer nav ul {
-        display: block; /* Stack the nav items */
-        margin: 0 auto; /* Center the nav items */
+        display: block;
+        margin: 0 auto;
     }
 
     footer nav ul>li {
-        display: block; /* Each item takes full width */
-        margin: 0.5rem 0; /* Add margin between items */
+        display: block;
+        margin: 0.5rem 0;
     }
 
     footer p {
-        font-size: 1em; /* Increase font size for better readability */
+        font-size: 1em;
     }
 }
 
-/* Mobile Devices (max-width: 767px) */
 @media (max-width: 767px) {
     footer {
-        height: auto; /* Allow the footer to adjust height based on content */
-        padding: 0.75rem; /* Further reduce padding for mobile */
+        height: auto;
+        padding: 0.75rem;
     }
 
     footer nav ul {
-        display: block; /* Stack nav items */
-        margin: 0 auto; /* Center nav items */
+        display: block;
+        margin: 0 auto;
     }
 
     footer nav ul>li {
-        display: block; /* Each item takes full width */
-        margin: 0.5rem 0; /* Add margin between items */
+        display: block;
+        margin: 0.5rem 0;
     }
 
     footer p {
-        font-size: 0.9em; /* Adjust font size */
+        font-size: 0.9em;
     }
 }
 
