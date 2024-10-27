@@ -114,18 +114,6 @@ td {
     font-size: 1rem;
 }
 
-@media (max-width: 600px) {
-
-    th,
-    td {
-        display: block;
-        width: 100%;
-    }
-
-    tr {
-        margin-bottom: 1rem;
-    }
-}
 
 .info-section {
     display: flex;
@@ -471,23 +459,6 @@ button[id="submit"]:hover {
     line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-    .aboutus {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .aboutus h2 {
-        font-size: 28px;
-    }
-
-    .aboutus p,
-    .aboutus ul li,
-    .aboutus ol li {
-        font-size: 14px;
-    }
-}
-
 
 
 .study_guide_hero-section {
@@ -811,13 +782,13 @@ header {
     transition: all 0.3s 0s ease;
 }
 
-.nav_links li a:hover {
+.nav_links li a:visited:hover {
     color: #fcaf17;
     transform: scale(1.05);
 }
 
 .nav_links li a:visited {
-    color: purple;
+    color: black;
     transform: scale(1.05);
 }
 
@@ -997,7 +968,7 @@ footer nav ul {
     display: inline-block;
 }
 
-footer nav ul li {
+footer nav ul > li {
     display: inline;
     margin: 0 15px;
     border: none;
@@ -1029,3 +1000,5 @@ footer a:hover {
     color: #fcaf17;
     transform: scale(1.05);
 }
+
+
