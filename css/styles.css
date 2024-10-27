@@ -46,6 +46,7 @@ html {
     padding: 0.9375rem 1.875rem;
     border: none;
     background-color: #fcaf17;
+    border-color: #fcaf17;
     border-radius: 1.5625rem;
     color: white;
     font-size: 1.125rem;
@@ -370,6 +371,7 @@ td {
         margin: 0.5rem 0;
         padding: 1rem;
         border-radius: 0.5rem;
+        border-color: transparent;
         box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
     }
 
@@ -462,6 +464,7 @@ td {
         margin: 0 auto;
         padding: 1rem;
         border-radius: 0.5rem;
+        border-color: white;
         box-shadow: 0 1px 2px rgb(0, 0, 0, 0.1);
     }
 
@@ -590,8 +593,8 @@ button[id="submit"]:hover {
     padding-left: 1.25rem;
 }
 
-.aboutus ul li,
-.aboutus ol li {
+.aboutus ul > li,
+.aboutus ol > li {
     font-weight: normal;
     font-size: 1rem;
     margin-bottom: 0.625rem;
@@ -1112,16 +1115,16 @@ header {
     transform: translateY(0);
 }
 
-.nav_links li a {
+.nav_links li > a {
     transition: all 0.3s ease;
 }
 
-.nav_links li a:visited:hover {
+.nav_links li > a:visited:hover {
     color: #fcaf17;
     transform: scale(1.05);
 }
 
-.nav_links li a:visited {
+.nav_links li > a:visited {
     color: black;
     transform: scale(1.05);
 }
