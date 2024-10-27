@@ -313,6 +313,129 @@ td {
     margin-bottom: 1.875rem; /* 30px */
 }
 
+@media (max-width: 768px) {
+
+    table {
+        width: 100%; /* Full width on tablets */
+    }
+
+    th,
+    td {
+        padding: 0.5rem; /* Reduced padding for smaller screens */
+        font-size: 0.9rem; /* Slightly smaller font */
+    }
+
+    tr {
+        display: block; /* Make each row block-level */
+        margin-bottom: 1rem; /* Space between rows */
+    }
+
+    th {
+        display: none; /* Hide header for better layout */
+    }
+
+    td {
+        display: flex; /* Use flex to align items */
+        justify-content: space-between; /* Space between label and value */
+        border: none; /* Remove borders for better readability */
+        position: relative; /* Needed for pseudo-elements */
+        padding-left: 50%; /* Add padding to make space for pseudo-elements */
+    }
+
+    td:before {
+        content: attr(data-label); /* Use data-label attribute for headings */
+        position: absolute;
+        left: 10px; /* Align text */
+        font-weight: bold; /* Make it bold */
+        color: #333; /* Color for the label */
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem; /* Reduced padding */
+    }
+
+    .hero-headtext {
+        font-size: 4rem; /* Adjusted for tablet */
+    }
+
+    .hero-subtext {
+        font-size: 1.5rem; /* Adjusted for tablet */
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+        width: 80%; /* Responsive image size */
+        max-width: 100%; /* Allow for scaling */
+    }
+
+    .what-we-offer {
+        height: auto; /* Allow the section to grow */
+    }
+
+    .offer-card {
+        width: 90%; /* Full width for smaller screens */
+    }
+
+    .reviews-section a {
+        font-size: 2rem; /* Smaller font size for tablet */
+    }
+
+    .reviews-section h1 {
+        font-size: 1.5rem; /* Smaller font size for tablet */
+    }
+    
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+
+    th,
+    td {
+        font-size: 0.8rem; /* Even smaller font for mobile */
+        padding: 0.4rem; /* Reduced padding */
+    }
+
+    .hero-section {
+        padding: 1.5rem; /* Further reduced padding */
+    }
+
+    .hero-headtext {
+        font-size: 3rem; /* Adjusted for mobile */
+    }
+
+    .hero-subtext {
+        font-size: 1.25rem; /* Adjusted for mobile */
+    }
+
+    .hero-image {
+        width: 100%; /* Full width for mobile */
+        max-width: none; /* Allow for scaling */
+    }
+
+    .what-we-offer {
+        height: auto; /* Allow the section to grow */
+        padding: 2rem 0; /* Add vertical padding */
+    }
+
+    .offer-card {
+        width: 90%; /* Full width for mobile */
+        margin: 0.5rem 0; /* Reduced margins */
+    }
+
+    .reviews-section a {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .reviews-section h1 {
+        font-size: 1.25rem; /* Smaller font size for mobile */
+    }
+
+    #review_card {
+        width: 90%; /* Adjusted card width for mobile */
+    }
+}
 
 h1,
 h2 {
@@ -692,6 +815,14 @@ header {
     height: 5rem; /* 80px / 16 */
 }
 
+#hamburger {
+    display: none; /* Hidden by default on desktop */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .nav_links {
     list-style: none;
     padding: 0;
@@ -808,7 +939,62 @@ button[id="contact"]:hover {
     transition: all 0.3s ease;
     transform: scale(1.05);
 }
+.mobile-nav {
+    display: none; /* Hide by default */
+}
 
+@media (max-width: 768px) {
+    .nav_links {
+        display: none; /* Hide links by default on smaller screens */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: #ffffff;
+        top: 5rem; /* Align with header height */
+        left: 0;
+        z-index: 999;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    }
+
+    .nav_links.show {
+        display: flex; /* Show links when hamburger is clicked */
+    }
+
+    #hamburger {
+        display: block; /* Show hamburger icon on smaller screens */
+        margin-right: 1rem; /* Margin for hamburger */
+    }
+
+    /* Mobile Navigation Styles */
+    .mobile-nav {
+        display: block; /* Show mobile nav on smaller screens */
+        position: absolute; /* Position it below the header */
+        top: 5rem; /* Align with header height */
+        left: 0;
+        width: 100%; /* Full width */
+        background-color: #ffffff; /* Background color */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    }
+
+    /* Styling for the Contact button */
+    #contact {
+        padding: 0.625rem 1.5rem; /* Button padding */
+        background-color: #fcaf17; /* Contact button color */
+        color: white; /* Text color */
+        border-radius: 2.5rem; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor */
+        transition: all 0.3s ease; /* Transition effects */
+        margin: 1rem; /* Margin for spacing */
+        width: calc(100% - 2rem); /* Full width minus margins */
+        text-align: center; /* Center text */
+    }
+
+    /* Hover effect for the Contact button */
+    #contact:hover {
+        background-color: #e69c13; /* Darker shade for hover effect */
+        transform: scale(1.05); /* Slight scale effect on hover */
+    }
+}
 
 #start-section {
     background-color: #f4f4f4;
@@ -1044,4 +1230,39 @@ footer a:hover {
 
 #decline-button:hover {
     background-color: #e63939; /* Darker shade for hover effect */
+}
+
+
+@media (max-width: 768px) {
+    #cookie-popup {
+        padding: 15px; /* Reduced padding */
+    }
+
+    #cookie-popup p {
+        font-size: 0.9em; /* Slightly smaller font size */
+    }
+
+    #cookie-popup button {
+        font-size: 0.9em; /* Slightly smaller button text */
+        padding: 0.5em 1em; /* Reduced padding */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    #cookie-popup {
+        padding: 10px; /* Further reduced padding */
+        flex-direction: column; /* Ensure buttons stack vertically */
+    }
+
+    #cookie-popup p {
+        font-size: 0.85em; /* Smaller font size for mobile */
+    }
+
+    #cookie-popup button {
+        font-size: 0.85em; /* Smaller button text */
+        padding: 0.5em; /* Further reduced padding */
+        margin: 5px 0; /* Space between buttons in vertical layout */
+        width: 100%; /* Full width buttons for better touch interaction */
+    }
 }
